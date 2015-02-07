@@ -12,19 +12,18 @@ public class Robot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
+		if(Input.GetAxis("Horizontal") < 0 ){
+		//if (Input.GetButton ("left")) {
 			rigidbody2D.AddForce(-Vector3.right * movspeed);
 			//rigidbody2D.MovePosition(-Vector2.right * movspeed);
 		}
-		else if (Input.GetKeyDown (KeyCode.RightArrow)) {
+		else if (Input.GetAxis("Horizontal") > 0 ) {
 			rigidbody2D.AddForce(Vector3.right * movspeed);
 			//rigidbody2D.MovePosition(Vector2.right * movspeed);
 		}
 	}
 
 	void FixedUpdate(){
-
-
 
 	}
 
