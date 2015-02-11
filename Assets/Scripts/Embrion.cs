@@ -14,8 +14,8 @@ public class Embrion : MonoBehaviour {
 	}
 
 	void SetDir(){
-		rigidbody2D.AddForce(Vector3.up * Random.Range(-1000, 1000));
-		rigidbody2D.AddForce(Vector3.right * Random.Range(-1000, 1000));
+		rigidbody2D.AddForce(Vector3.up * Random.Range(-100, 100));
+		rigidbody2D.AddForce(Vector3.right * Random.Range(-100, 100));
 		transform.Rotate(0, 0, Random.Range(-30, 30));
 	}
 }
