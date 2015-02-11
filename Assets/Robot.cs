@@ -13,13 +13,13 @@ public class Robot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetAxis("Horizontal") < 0 ){
-		//if (Input.GetButton ("left")) {
-			rigidbody2D.AddForce(-Vector3.right * movspeed);
-			//rigidbody2D.MovePosition(-Vector2.right * movspeed);
+
+			if (transform.position.x > 0.35f)
+				transform.position = new Vector2(transform.position.x - movspeed, transform.position.y);
 		}
 		else if (Input.GetAxis("Horizontal") > 0 ) {
-			rigidbody2D.AddForce(Vector3.right * movspeed);
-			//rigidbody2D.MovePosition(Vector2.right * movspeed);
+			if (transform.position.x < 0.85f)
+				transform.position = new Vector2(transform.position.x + movspeed, transform.position.y);
 		}
 	}
 
