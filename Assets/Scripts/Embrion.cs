@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Embrion : MonoBehaviour {
 
+	public bool alive = true;
+
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("SetDir", 1, 1);
@@ -14,8 +16,10 @@ public class Embrion : MonoBehaviour {
 	}
 
 	void SetDir(){
-		rigidbody2D.AddForce(Vector3.up * Random.Range(-100, 100));
-		rigidbody2D.AddForce(Vector3.right * Random.Range(-100, 100));
-		transform.Rotate(0, 0, Random.Range(-30, 30));
+		if (alive) {
+			rigidbody2D.AddForce(Vector3.up * Random.Range(-200, 200));
+			rigidbody2D.AddForce(Vector3.right * Random.Range(-200, 200));
+			transform.Rotate(0, 0, Random.Range(-45, 45));
+		}
 	}
 }
