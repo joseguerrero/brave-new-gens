@@ -11,7 +11,7 @@ public class OpenSalaTratamientos : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown (0) && !loadLock) {
-				Application.LoadLevel ("mov-aguja");
+				Application.LoadLevel ("mov-aguja-test");
 				loadLock=false;
 				}
 

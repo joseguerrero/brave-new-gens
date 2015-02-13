@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/principal.unity
-  - enabled: 1
     path: Assets/Scenes/mov-aguja.unity
+  - enabled: 1
+    path: Assets/Scenes/mov-aguja-test.unity
