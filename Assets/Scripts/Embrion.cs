@@ -19,7 +19,7 @@ public class Embrion : MonoBehaviour {
 		if (alive) {
 			rigidbody2D.AddForce(Vector3.up * Random.Range(-200, 200));
 			rigidbody2D.AddForce(Vector3.right * Random.Range(-200, 200));
-			transform.Rotate(0, 0, Random.Range(-45, 45));
+			//transform.Rotate(0, 0, Random.Range(-45, 45));
 		}
 	}
 }
