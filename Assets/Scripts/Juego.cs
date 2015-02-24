@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Juego : MonoBehaviour {
+public class JuegoClasificacion : MonoBehaviour {
 
-	public GameObject embryo;
+	//public GameObject embryo;
 	public GameObject flask;
-	public GameObject mecharm;
+	//public GameObject mecharm;
 	public float distance = 20.0f;
 	public Correa correa;
 
@@ -20,6 +20,7 @@ public class Juego : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
+		/*
 		RaycastHit2D hit = Physics2D.Raycast (mecharm.transform.position, -Vector2.up, distance);
 
 		if (hit.collider != null &&  hit.collider.name == "Flask(Clone)" && !correa.busy ) {
@@ -29,6 +30,7 @@ public class Juego : MonoBehaviour {
 				StartCoroutine(SpawnEmbryo());
 			}
 		}
+		*/
 	}
 	
 	IEnumerator SpawnFlask() {
@@ -36,11 +38,13 @@ public class Juego : MonoBehaviour {
 		Instantiate(flask, new Vector2(-8.0f, 1.0f), transform.rotation);
 	}
 
+	/*
 	IEnumerator SpawnEmbryo() {
 		correa.busy = true;
 		yield return new WaitForSeconds (1);
 		Instantiate(embryo, new Vector2(0.0f, 1.5f), transform.rotation);
 	}
+	*/
 
 
 }
