@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Juego : MonoBehaviour {
+public class JuegoClasificacion : MonoBehaviour {
 
-	public GameObject embryo;
+	//public GameObject embryo;
 	public GameObject flask;
 	public GameObject mecharm;
-	public float distance = 20.0f;
+	public float distance = 10.0f;
 	public Correa correa;
 
 	// Use this for initialization
@@ -26,7 +26,7 @@ public class Juego : MonoBehaviour {
 
 			if (!correa.stopped){
 				correa.Stop();
-				StartCoroutine(SpawnEmbryo());
+				//StartCoroutine(SpawnEmbryo());
 			}
 		}
 	}
@@ -34,12 +34,7 @@ public class Juego : MonoBehaviour {
 	IEnumerator SpawnFlask() {
 		yield return new WaitForSeconds (2);
 		Instantiate(flask, new Vector2(-8.0f, 1.0f), transform.rotation);
-	}
-
-	IEnumerator SpawnEmbryo() {
-		correa.busy = true;
-		yield return new WaitForSeconds (1);
-		Instantiate(embryo, new Vector2(0.0f, 1.5f), transform.rotation);
+		//flask.AddComponent ("Drag");
 	}
 
 
