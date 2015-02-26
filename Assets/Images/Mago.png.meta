@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: d15b606605cfa454984bed83c885f2fe
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mago_0
+    21300002: Mago_1
+    21300004: Mago_2
+    21300006: Mago_3
+    21300008: Mago_4
+    21300010: Mago_5
+    21300012: Mago_6
+    21300014: Mago_7
+    21300016: Mago_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mago_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 126
+        width: 26
+        height: 59
+      alignment: 9
+      pivot: {x: .40479821, y: .944062293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 126
+        width: 26
+        height: 59
+      alignment: 9
+      pivot: {x: .37306419, y: .952163935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 139
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 139
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 86
+        width: 60
+        height: 93
+      alignment: 9
+      pivot: {x: .490832269, y: .198356956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 26
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 107
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 107
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mago_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 31
+        width: 122
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
