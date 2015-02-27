@@ -9,13 +9,11 @@ public class Robot : MonoBehaviour {
 	public float edge_right;
 	public float distance;
 	public Text texto;
-	private Animation needle;
-	int layerMask = 1 << 8;
 	public Collider2D actualCol;
+	int layerMask = 1 << 8;
 
-	// Use this for initialization
 	void Start () {
-		needle = transform.GetComponent<Animation> ();
+		//needle = transform.GetComponent<Animation> ();
 	}
 	
 	// Update is called once per frame

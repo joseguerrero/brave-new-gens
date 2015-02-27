@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 
 public class WanderSteering : MonoBehaviour {
-	public GameObject HideObject;
+	//public GameObject HideObject;
 // ===================================
 // member variables 
 // ===================================
@@ -23,7 +23,7 @@ public class WanderSteering : MonoBehaviour {
 	public float separationAmt = 1.0f;
 	public float wallAvoidanceAmt = 1.0f;
 	
-	public GameObject target;
+	//public GameObject target;
 	
 	//flock behaviours
 	public float BoundingRadius = 2.0f;
@@ -107,8 +107,8 @@ public class WanderSteering : MonoBehaviour {
 	}
 	
 	void LateUpdate(){
-		target_vel = (target.transform.position - target_last_pos)/Time.deltaTime;
-		target_last_pos = target.transform.position;
+		//target_vel = (target.transform.position - target_last_pos)/Time.deltaTime;
+		//target_last_pos = target.transform.position;
 		myVehicle = this.GetComponent<WanderVehicle>();
 		
 	}

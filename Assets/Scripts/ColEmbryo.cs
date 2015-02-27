@@ -14,9 +14,10 @@ public class ColEmbryo : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		Gamemaster.instance.embHead.collider2D.enabled = false;
-		Gamemaster.instance.embBody.collider2D.enabled = false;
-		Gamemaster.instance.embHead.GetComponent<SpriteRenderer>().color = new Color (255, 0, 0, 255);
+		if (col.name == "Aguja" && !Gamemaster.instance.headHit && !Gamemaster.instance.bodyHit) {
+			Gamemaster.instance.headHit = true;
+			GameObject head = Gamemaster.instance.actualEmbryo.transform.FindChild ("Cabeza").gameObject;
+			head.GetComponent<SpriteRenderer>().color = new Color (255, 0, 0, 255);
+		}
 	}
-
 }

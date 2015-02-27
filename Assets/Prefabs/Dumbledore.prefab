@@ -28,7 +28,7 @@ GameObject:
   - 50: {fileID: 5054674}
   - 114: {fileID: 11454670}
   - 114: {fileID: 11454668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tronco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 212: {fileID: 21254670}
   - 50: {fileID: 5054670}
   - 233: {fileID: 23354670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brazo_Der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 212: {fileID: 21254672}
   - 50: {fileID: 5054668}
   - 233: {fileID: 23354668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Brazo_Izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,8 @@ GameObject:
   - 61: {fileID: 6154668}
   - 50: {fileID: 5054672}
   - 233: {fileID: 23354672}
-  m_Layer: 0
+  - 114: {fileID: 11499260}
+  m_Layer: 8
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.56999993, y: -14.21, z: 0}
+  m_LocalPosition: {x: .300000012, y: -5.0999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 454676}
@@ -113,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .944999993, y: 7.37900019, z: -1.47099996}
+  m_LocalPosition: {x: -.330000013, y: .109999999, z: -1.47000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454668}
@@ -125,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154672}
   m_LocalRotation: {x: 0, y: 0, z: -.350616068, w: .936519325}
-  m_LocalPosition: {x: .800000012, y: 7.53999996, z: -1.47000003}
+  m_LocalPosition: {x: -.469999999, y: .270000011, z: -1.47000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454668}
@@ -137,7 +138,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154674}
   m_LocalRotation: {x: 0, y: 0, z: .39618659, w: .918170035}
-  m_LocalPosition: {x: 1.04499996, y: 7.50199986, z: -1.47000003}
+  m_LocalPosition: {x: -.230000004, y: .230000004, z: -1.47000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454668}
@@ -149,7 +150,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154676}
   m_LocalRotation: {x: 0, y: 0, z: .129660949, w: .991558433}
-  m_LocalPosition: {x: .971000016, y: 7.70200014, z: -1.47099996}
+  m_LocalPosition: {x: -.300000012, y: .430000007, z: -1.47000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454668}
@@ -247,19 +248,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a1bc7b30a71874f98661775b4a7128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HideObject: {fileID: 185712, guid: 640d978002045cb43b15f8d7606f5e40, type: 2}
+  HideObject: {fileID: 0}
   seekAmt: 1
   arriveAmt: 1
   fleeAmt: 1
   pursuitAmt: 1
   evadeAmt: 1
-  wanderAmt: .100000001
+  wanderAmt: .5
   avoidAmt: 1
   alignmentAmt: 1
   cohesionAmt: 1
   separationAmt: 1
   wallAvoidanceAmt: 1
-  target: {fileID: 185712, guid: 640d978002045cb43b15f8d7606f5e40, type: 2}
+  target: {fileID: 0}
   BoundingRadius: 2
   tagged: 0
   wander_circle_radius: 5
@@ -296,6 +297,17 @@ MonoBehaviour:
   maxspeed: 10
   steering_force: {x: 0, y: 0, z: 0}
   trueAcceleration: 0
+--- !u!114 &11499260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5e6d24049365a4690c59f8c70e6dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21254668
 SpriteRenderer:
   m_ObjectHideFlags: 1
