@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Drag : MonoBehaviour {
+	//public GameObject envase;
+
 	Vector3 dist;
 	float posX;
 	float posY;
@@ -21,4 +23,18 @@ public class Drag : MonoBehaviour {
 		Vector3 worldPos = Camera.main.ScreenToWorldPoint(curPos);
 		transform.position = worldPos;
 	}
+
+	void OnTriggerEnter (Collider other)
+	{
+		switch (other.gameObject.tag) {
+			case "casta":
+				Destroy(gameObject);
+				EnvaseClass.CreateEnvase ();
+				break;
+
+			default:
+				break;
+		}
+	}
+
 }

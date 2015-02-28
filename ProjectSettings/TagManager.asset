@@ -4,6 +4,10 @@
 TagManager:
   tags:
   - Aguja
+  - txtpuntaje
+  - casta
+  - tipoenvase
+  - limbo
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
