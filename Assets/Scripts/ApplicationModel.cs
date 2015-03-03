@@ -30,11 +30,11 @@ public class ApplicationModel {
 		txtEpsilons = GameObject.Find ("txtEpsilons").GetComponent<UnityEngine.UI.Text> ();
 		
 		txtPuntaje.text = string.Format ("Puntaje:{0}", ApplicationModel.puntaje);
-		txtAlfas.text = string.Format ("Alfas:{0}", ApplicationModel.alfas);
-		txtBetas.text = string.Format ("Betas:{0}", ApplicationModel.betas);
-		txtGammas.text = string.Format ("Gammas:{0}", ApplicationModel.gammas);
-		txtDeltas.text = string.Format ("Deltas:{0}", ApplicationModel.deltas);
-		txtEpsilons.text = string.Format ("Epsilons:{0}", ApplicationModel.epsilons);
+		txtAlfas.text = string.Format ("{0}", ApplicationModel.alfas);
+		txtBetas.text = string.Format ("{0}", ApplicationModel.betas);
+		txtGammas.text = string.Format ("{0}", ApplicationModel.gammas);
+		txtDeltas.text = string.Format ("{0}", ApplicationModel.deltas);
+		txtEpsilons.text = string.Format ("{0}", ApplicationModel.epsilons);
 		
 	}
 }
