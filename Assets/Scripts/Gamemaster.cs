@@ -43,11 +43,11 @@ public class Gamemaster : MonoBehaviour
 	void Start () {
 		Gamemaster.instance.textScore.text = "Puntuacion: 0";
 		Gamemaster.instance.textKills.text = "Muertes: 0";
-		StartCoroutine (SpawnFlask ());
+		//StartCoroutine (SpawnFlask ());
 	}
 
 	public void SpawnEmbWrap(){
-		StartCoroutine (SpawnEmbryo ());
+		//StartCoroutine (SpawnEmbryo ());
 	}
 
 	IEnumerator SpawnEmbryo() {
@@ -58,7 +58,7 @@ public class Gamemaster : MonoBehaviour
 	}
 
 	public void SpawnFlaskWrap(){
-		StartCoroutine (SpawnFlask ());
+		//StartCoroutine (SpawnFlask ());
 	}
 
 	IEnumerator SpawnFlask() {
