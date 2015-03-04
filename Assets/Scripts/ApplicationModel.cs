@@ -11,8 +11,11 @@ public class ApplicationModel {
 	public static int gammas;
 	public static int deltas;
 	public static int epsilons;
+	public static int reciclados;
+
 	public static int constAgregar;
 	public static int constPerdido;
+	public static int constReciclar;
 
 	static Text txtPuntaje;
 	static Text txtAlfas;

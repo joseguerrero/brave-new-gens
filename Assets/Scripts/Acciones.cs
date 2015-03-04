@@ -27,6 +27,7 @@ public class Acciones : MonoBehaviour {
 	{
 		switch (other.gameObject.tag) {
 			case "casta":
+			case "bin":
 				Destroy(gameObject);
 				EnvaseClass.CreateEnvase ();
 				break;
