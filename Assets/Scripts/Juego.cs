@@ -41,6 +41,4 @@ public class Juego : MonoBehaviour {
 		yield return new WaitForSeconds (1);
 		Instantiate(embryo, new Vector2(0.0f, 1.5f), transform.rotation);
 	}
-
-
 }

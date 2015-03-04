@@ -2,13 +2,9 @@
 using System.Collections;
 
 public class OpenScene : MonoBehaviour {
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	public void Open (string SceneName) {
+	public string SceneName;
+
+	public void Open_Scene(){
 		Application.LoadLevel (SceneName);
 	}
 }
