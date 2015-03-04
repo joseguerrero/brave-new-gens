@@ -1,30 +1,48 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Robot : MonoBehaviour {
 
-	public float movspeed = 100;
+	public float movspeed;
+	public float edge_left;
+	public float edge_right;
+	public float distance;
+	//public Text texto;
+	public Collider2D actualCol;
+	int layerMask = 1 << 8;
 
-	// Use this for initialization
 	void Start () {
-	
+		//needle = transform.GetComponent<Animation> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetAxis("Horizontal") < 0 ){
-
-			if (transform.position.x > 0.35f)
-				transform.position = new Vector2(transform.position.x - movspeed, transform.position.y);
-		}
-		else if (Input.GetAxis("Horizontal") > 0 ) {
-			if (transform.position.x < 0.85f)
-				transform.position = new Vector2(transform.position.x + movspeed, transform.position.y);
+		if (Gamemaster.instance.playerControl){
+			if(Input.GetAxis("Horizontal") < 0 ){
+				if (transform.position.x > edge_left)
+					transform.position = new Vector2(transform.position.x - movspeed, transform.position.y);
+			}
+			else if (Input.GetAxis("Horizontal") > 0 ) {
+				if (transform.position.x < edge_right)
+					transform.position = new Vector2(transform.position.x + movspeed, transform.position.y);
+			}
 		}
 	}
 
 	void FixedUpdate(){
 
-	}
+		RaycastHit2D hit = Physics2D.Raycast (transform.position, -Vector2.up, distance, layerMask);
 
+		if (hit.collider != null) {
+			actualCol = hit.collider;
+			//Debug.DrawLine(transform.position, hit.collider.transform.position, new Color(0, 0, 255), 0.1f);
+			Debug.DrawRay(transform.position, hit.collider.transform.position, new Color(0, 0, 255), 0.1f);
+			//texto.text = hit.collider.name;
+		}
+		else {
+			actualCol = null;
+			//texto.text = "Nada";
+		}
+	}
 }

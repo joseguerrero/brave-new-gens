@@ -1,0 +1,414 @@
+fileFormatVersion: 2
+guid: d2c85fc7bc50e1b41a7636970893289f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: finalfinal3-01_0
+    21300002: finalfinal3-01_1
+    21300004: finalfinal3-01_2
+    21300006: finalfinal3-01_3
+    21300008: finalfinal3-01_4
+    21300010: finalfinal3-01_5
+    21300012: finalfinal3-01_6
+    21300014: finalfinal3-01_7
+    21300016: finalfinal3-01_8
+    21300018: finalfinal3-01_9
+    21300020: finalfinal3-01_10
+    21300022: finalfinal3-01_11
+    21300024: finalfinal3-01_12
+    21300026: finalfinal3-01_13
+    21300028: finalfinal3-01_14
+    21300030: finalfinal3-01_15
+    21300032: finalfinal3-01_16
+    21300034: finalfinal3-01_17
+    21300036: finalfinal3-01_18
+    21300038: finalfinal3-01_19
+    21300040: finalfinal3-01_20
+    21300042: finalfinal3-01_21
+    21300044: finalfinal3-01_22
+    21300046: finalfinal3-01_23
+    21300048: finalfinal3-01_24
+    21300050: finalfinal3-01_25
+    21300052: finalfinal3-01_26
+    21300054: finalfinal3-01_27
+    21300056: finalfinal3-01_28
+    21300058: finalfinal3-01_29
+    21300060: finalfinal3-01_30
+    21300062: finalfinal3-01_31
+    21300064: finalfinal3-01_32
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Web
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: finalfinal3-01_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 3994
+        width: 3992
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_1
+      rect:
+        serializedVersion: 2
+        x: 4066
+        y: 3994
+        width: 8
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 3450
+        width: 4070
+        height: 412
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_3
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 3178
+        width: 612
+        height: 204
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_4
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 3206
+        width: 132
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_5
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 3070
+        width: 556
+        height: 280
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_6
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 2374
+        width: 162
+        height: 568
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_7
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 2370
+        width: 424
+        height: 568
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_8
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 2711
+        width: 204
+        height: 335
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_9
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 2898
+        width: 112
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_10
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 2434
+        width: 140
+        height: 448
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_11
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 2750
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_12
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 2618
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_13
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 2470
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_14
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 2178
+        width: 708
+        height: 136
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_15
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 2054
+        width: 92
+        height: 380
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_16
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 2282
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_17
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 2186
+        width: 39
+        height: 79
+      alignment: 9
+      pivot: {x: .454038948, y: .829002678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_18
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 2187
+        width: 44
+        height: 75
+      alignment: 9
+      pivot: {x: .255565286, y: .822649717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_19
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 2050
+        width: 152
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_20
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 2038
+        width: 160
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_21
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 2038
+        width: 80
+        height: 88
+      alignment: 9
+      pivot: {x: .298342884, y: .815723777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_22
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1654
+        width: 20
+        height: 336
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_23
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 1730
+        width: 136
+        height: 160
+      alignment: 9
+      pivot: {x: .0980045125, y: .595226288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_24
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 1846
+        width: 68
+        height: 92
+      alignment: 9
+      pivot: {x: .341839969, y: .83122319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_25
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1614
+        width: 184
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_26
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1312
+        width: 546
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 4080
+        height: 1144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_28
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 3992
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_29
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 0
+        width: 8
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_30
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1304
+        width: 657
+        height: 817
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 10, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_31
+      rect:
+        serializedVersion: 2
+        x: 2809
+        y: 2260
+        width: 140
+        height: 122
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: finalfinal3-01_32
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 2173
+        width: 257
+        height: 348
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

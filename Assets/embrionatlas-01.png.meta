@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 71002e136e5d3944c8087111c068ca98
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: embrionatlas-01_0
+    21300002: embrionatlas-01_1
+    21300006: embrionatlas-01_3
+    21300008: embrionatlas-01_4
+    21300010: embrionatlas-01_5
+    21300012: embrionatlas-01_6
+    21300014: embrionatlas-01_7
+    21300016: embrionatlas-01_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: embrionatlas-01_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 316
+        width: 182
+        height: 155
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: embrionatlas-01_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 423
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 347
+        width: 29
+        height: 25
+      alignment: 9
+      pivot: {x: .511947095, y: .236705318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: embrionatlas-01_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 227
+        width: 47
+        height: 45
+      alignment: 9
+      pivot: {x: .735874891, y: .299834192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: embrionatlas-01_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 269
+        width: 31
+        height: 46
+      alignment: 9
+      pivot: {x: .551584542, y: .245066106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: embrionatlas-01_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 215
+        width: 29
+        height: 52
+      alignment: 9
+      pivot: {x: .571677625, y: .220181972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: embrionatlas-01_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 232
+        width: 27
+        height: 35
+      alignment: 9
+      pivot: {x: .525662482, y: .361424029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: embrionatlas-01_7
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 95
+        width: 140
+        height: 145
+      alignment: 9
+      pivot: {x: .317242444, y: .14341262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: embrionatlas-01_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 91
+        width: 174
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
