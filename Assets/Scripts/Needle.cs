@@ -24,7 +24,7 @@ public class Needle : MonoBehaviour {
 	void generateAnim(){
 		if (transform.parent.GetComponent<Robot>().actualCol != null){
 			AnimationCurve curve = AnimationCurve.Linear(0, 0, 1, 0);
-			curve.AddKey(0.5f, transform.parent.GetComponent<Robot>().actualCol.transform.position.y - 0.5f);
+			curve.AddKey(0.5f, transform.parent.GetComponent<Robot>().actualCol.transform.position.y - 1.0f);
 			AnimationClip clip = new AnimationClip();
 			clip.SetCurve("", typeof(Transform), "localPosition.y", curve);
 			animation.AddClip(clip, "test");

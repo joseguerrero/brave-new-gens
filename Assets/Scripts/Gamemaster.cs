@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Gamemaster : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class Gamemaster : MonoBehaviour
 	public bool bodyHit = false;
 	public Object prefFlask;
 	public Object prefEmbryo;
-	public GameObject embBody;
-	public GameObject embHead;
 	public GameObject actualEmbryo;
 	public GameObject actualFlask;
 	public GameObject correa;
+	public float sensorDistance;
+	public float score;
+	public int kills;
+	public Text textScore;
+	public Text textKills;
 	
 	public static Gamemaster instance {
 		get {
@@ -37,13 +41,9 @@ public class Gamemaster : MonoBehaviour
 	}
 
 	void Start () {
+		Gamemaster.instance.textScore.text = "Puntuacion: 0";
+		Gamemaster.instance.textKills.text = "Muertes: 0";
 		StartCoroutine (SpawnFlask ());
-	}
-
-	IEnumerator SpawnFlask() {
-		yield return new WaitForSeconds (2);
-		//GameObject tmp = (GameObject) Instantiate(player_robot, pos, rot);
-		actualEmbryo = (GameObject) Instantiate(prefFlask, new Vector2(-21.0f, 1.0f), transform.rotation);
 	}
 
 	public void SpawnEmbWrap(){
@@ -56,6 +56,32 @@ public class Gamemaster : MonoBehaviour
 		actualEmbryo = (GameObject) Instantiate(prefEmbryo, new Vector2(0.0f, -5.0f), transform.rotation);
 		playerControl = true;
 	}
+
+	public void SpawnFlaskWrap(){
+		StartCoroutine (SpawnFlask ());
+	}
+
+	IEnumerator SpawnFlask() {
+		yield return new WaitForSeconds (2);
+		actualFlask = (GameObject) Instantiate(prefFlask, new Vector2(-21.0f, 1.0f), transform.rotation);
+	}
+
+
+	IEnumerator EmbryoKilled(GameObject go) {
+		yield return new WaitForSeconds (6);
+		correa.GetComponent<Correa> ().Run ();
+		yield return new WaitForSeconds (6);
+		Destroy (go);
+		correa.GetComponent<Correa> ().busy = false;
+	}
+	
+	IEnumerator EmbryoLives() {
+		yield return new WaitForSeconds (6);
+		correa.GetComponent<Correa> ().Run ();
+		yield return new WaitForSeconds (6);
+		correa.GetComponent<Correa> ().busy = false;
+	}
+
 
 
 }

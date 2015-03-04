@@ -2,119 +2,35 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-
-//****AUTONOMOUS STEERING BEHAVIORS****//
-
-
 public class WanderSteering : MonoBehaviour {
-	//public GameObject HideObject;
-// ===================================
-// member variables 
-// ===================================
-	public float seekAmt = 1.0f;
-	public float arriveAmt = 1.0f;
-	public float fleeAmt = 1.0f;
-	public float pursuitAmt = 1.0f;
-	public float evadeAmt = 1.0f;
+
+	public int wander_cycle_skip = 10;
+	public float rand_jit = 5;
 	public float wanderAmt = 1.0f;
-	public float avoidAmt = 1.0f;
-	public float alignmentAmt = 1.0f;
-	public float cohesionAmt = 1.0f;
-	public float separationAmt = 1.0f;
-	public float wallAvoidanceAmt = 1.0f;
-	
-	//public GameObject target;
-	
-	//flock behaviours
-	public float BoundingRadius = 2.0f;
-	public bool tagged;//true if within BoundingRadius for flocking behaviors
-	
-	//pursue
-	//public float pursue_fudgefactor = 1.0f;
-	
-	//wander
 	public float wander_circle_radius = 5;
 	public float wander_circle_distance = 5;
-	public float rand_jit = 5;
-	public int wander_cycle_skip = 10;
 	public float avoid_dist_wall_scalar = 0.3f;
-	
-	//arrive
-	public float arrive_speed_tweaker = 3;
-	public float arrive_stop_distance = 0.1f;
-
-	//obstacale avoidance
-	public float avoid_dist = 5.0f;
-	public float avoid_rad = 1.0f;
-	public float avoid_y_scalar = 1.5f;
-	public float AvoidBrakeWeight = 0.2f;
-	
-	public float hide_obj_width = 2.0f;
-	public float hide_from_obj = 3.0f;
-	
-	bool seek;
-	bool arrive;
-	bool flee;
-	bool pursuit;
-	bool evade;
-	bool wander = true;
-	bool alignment;
-	bool cohesion;
-	bool separation;
-	bool avoid;
-	bool hide;
-	bool wallAvoidance;
+	public bool wander = true;
 	int wander_timer = 0;
-	
-	Vector3 target_last_pos;
-	Vector3 target_vel;
-	protected Vector3 wander_target = Vector3.zero;
-	Vector3 p1;
-	Vector3 p2;
-	WanderVehicle myVehicle;
-	Vector3 last_wander_pos;
-	public float feeler_angle = 45.0f;
-	Vector3 f_wall_feeler;
-	Vector3 s1_wall_feeler;
-	Vector3 s2_wall_feeler;
-	public float sideFeelerLength = 1.0f;
-	public float forwardFeelerLength = 1.5f;
-	
-	GameObject[] enemy_list;
 
-// ===================================
-// accessors
-// ===================================
-		
+	protected Vector3 wander_target = Vector3.zero;
+	WanderVehicle myVehicle;
+
 	public bool getWander()
 	{
 		return wander;
 	}
 
-	
-	List<Vector3> feelers;
-
-	int layerMask = 1 << 8; //to prevent enemies from colliding w/ each other
-	int wallLayerMask = 1 << 9;
-	
-// ===================================
-// methods
-// ===================================
 	void Start () {
-		feelers = new List<Vector3>{ f_wall_feeler,s1_wall_feeler,s2_wall_feeler};
-		layerMask = ~layerMask;
-		wallLayerMask = ~wallLayerMask;
+	
 	}
 	
 	void LateUpdate(){
-		//target_vel = (target.transform.position - target_last_pos)/Time.deltaTime;
-		//target_last_pos = target.transform.position;
 		myVehicle = this.GetComponent<WanderVehicle>();
-		
 	}
 	
 	void Update () {	
-		//Debug.Log ("Your Velocity: " + target_vel + "  Pursuer Velocity: " +myVehicle.velocity );
+	
 	}
 	
 	void OnDrawGizmosSelected ()
@@ -138,7 +54,6 @@ public class WanderSteering : MonoBehaviour {
 		wander = false;
 		Debug.Log("wander turned off");
 	}
-
 	
 	public void SetPath(){return;}
 
@@ -157,14 +72,9 @@ public class WanderSteering : MonoBehaviour {
 		wander_timer ++;
 		if (wander_timer >= wander_cycle_skip)
 		{
-			//wander_target += (wander_circle_distance*transform.right)+(transform.position-last_wander_pos);
-
 			wander_target += new Vector3(UnityEngine.Random.Range(-rand_jit,rand_jit),
 			                             UnityEngine.Random.Range(-rand_jit,rand_jit),
 			                             0.0f);
-		
-			last_wander_pos = transform.position;
-			
 			//put to circle
 			Vector3 to_wander_target = Vector3.Normalize(wander_target - this.transform.position)* wander_circle_radius;
 			
@@ -184,17 +94,17 @@ public class WanderSteering : MonoBehaviour {
 		}
 		else
 			return Vector3.zero;
-		
 	}
 
-	public Vector3 CalculateWallCollision()
-	{
+	public Vector3 CalculateWallCollision(){
 		return Vector3.zero;
 	}
 
-	public Vector3 ForwardComponent(){return transform.forward;}
+	public Vector3 ForwardComponent(){
+		return transform.forward;
+	}
 	
-	public Vector3 SideComponent(){return transform.right;}
-
-	
+	public Vector3 SideComponent(){
+		return transform.right;
+	}
 }

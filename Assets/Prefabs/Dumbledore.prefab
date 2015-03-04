@@ -28,6 +28,7 @@ GameObject:
   - 50: {fileID: 5054674}
   - 114: {fileID: 11454670}
   - 114: {fileID: 11454668}
+  - 114: {fileID: 11451288}
   m_Layer: 8
   m_Name: Tronco
   m_TagString: Untagged
@@ -83,7 +84,7 @@ GameObject:
   - 61: {fileID: 6154668}
   - 50: {fileID: 5054672}
   - 233: {fileID: 23354672}
-  - 114: {fileID: 11499260}
+  - 114: {fileID: 11475968}
   m_Layer: 8
   m_Name: Cabeza
   m_TagString: Untagged
@@ -237,6 +238,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .327956915, y: .641924858}
   m_Center: {x: .0178075433, y: -.0605454445}
+--- !u!114 &11451288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da88dfffd8e4be4cb5f3a1411f817b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11454668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,37 +260,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a1bc7b30a71874f98661775b4a7128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HideObject: {fileID: 0}
-  seekAmt: 1
-  arriveAmt: 1
-  fleeAmt: 1
-  pursuitAmt: 1
-  evadeAmt: 1
-  wanderAmt: .5
-  avoidAmt: 1
-  alignmentAmt: 1
-  cohesionAmt: 1
-  separationAmt: 1
-  wallAvoidanceAmt: 1
-  target: {fileID: 0}
-  BoundingRadius: 2
-  tagged: 0
+  wander_cycle_skip: 10
+  rand_jit: 60
+  wanderAmt: 2
   wander_circle_radius: 5
   wander_circle_distance: 5
-  rand_jit: 5
-  wander_cycle_skip: 10
   avoid_dist_wall_scalar: .300000012
-  arrive_speed_tweaker: 3
-  arrive_stop_distance: .100000001
-  avoid_dist: 5
-  avoid_rad: 1
-  avoid_y_scalar: 1.5
-  AvoidBrakeWeight: .200000003
-  hide_obj_width: 2
-  hide_from_obj: 3
-  feeler_angle: 45
-  sideFeelerLength: 1
-  forwardFeelerLength: 1.5
+  wander: 1
 --- !u!114 &11454670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,7 +285,7 @@ MonoBehaviour:
   maxspeed: 10
   steering_force: {x: 0, y: 0, z: 0}
   trueAcceleration: 0
---- !u!114 &11499260
+--- !u!114 &11475968
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

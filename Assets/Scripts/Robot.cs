@@ -8,7 +8,7 @@ public class Robot : MonoBehaviour {
 	public float edge_left;
 	public float edge_right;
 	public float distance;
-	public Text texto;
+	//public Text texto;
 	public Collider2D actualCol;
 	int layerMask = 1 << 8;
 
@@ -38,11 +38,11 @@ public class Robot : MonoBehaviour {
 			actualCol = hit.collider;
 			//Debug.DrawLine(transform.position, hit.collider.transform.position, new Color(0, 0, 255), 0.1f);
 			Debug.DrawRay(transform.position, hit.collider.transform.position, new Color(0, 0, 255), 0.1f);
-			texto.text = hit.collider.name;
+			//texto.text = hit.collider.name;
 		}
 		else {
 			actualCol = null;
-			texto.text = "Nada";
+			//texto.text = "Nada";
 		}
 	}
 }
