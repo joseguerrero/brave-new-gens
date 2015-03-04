@@ -10,6 +10,7 @@ public class Gamemaster : MonoBehaviour
 	public bool bodyHit = false;
 	public Object prefFlask;
 	public Object prefEmbryo;
+	public Object subject;
 	public GameObject actualEmbryo;
 	public GameObject actualFlask;
 	public GameObject correa;
@@ -43,7 +44,13 @@ public class Gamemaster : MonoBehaviour
 	void Start () {
 		Gamemaster.instance.textScore.text = "Puntuacion: 0";
 		Gamemaster.instance.textKills.text = "Muertes: 0";
+		SpawnSubject ();
 		//StartCoroutine (SpawnFlask ());
+	}
+
+	public void SpawnSubject(){
+		Instantiate(subject, new Vector2(3.0f, -5.0f), transform.rotation);
+		//playerControl = true;
 	}
 
 	public void SpawnEmbWrap(){

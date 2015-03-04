@@ -25,7 +25,7 @@ public class HeadCol : MonoBehaviour {
 			//body.GetComponent<WanderSteering>().wander = false;
 
 			Gamemaster.instance.correa.GetComponent<Correa>().Run();
-			Gamemaster.instance.SpawnFlaskWrap ();
+			//Gamemaster.instance.SpawnFlaskWrap ();
 			//Gamemaster.instance.score -= 50.0f;
 			//Gamemaster.instance.kills += 1;
 			//Gamemaster.instance.textScore.text = "Puntuacion: " + Gamemaster.instance.score;
