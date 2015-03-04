@@ -98,6 +98,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 160242}
+  m_RootGameObject: {fileID: 190256}
   m_IsPrefabParent: 1
   m_IsExploded: 1
