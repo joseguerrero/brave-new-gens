@@ -12,7 +12,7 @@ GameObject:
   - 50: {fileID: 5073694}
   - 60: {fileID: 6000400}
   m_Layer: 0
-  m_Name: Envase
+  m_Name: envase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
