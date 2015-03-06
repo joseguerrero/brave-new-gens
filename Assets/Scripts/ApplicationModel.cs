@@ -32,7 +32,7 @@ public class ApplicationModel {
 		txtDeltas = GameObject.Find ("txtDeltas").GetComponent<UnityEngine.UI.Text> ();
 		txtEpsilons = GameObject.Find ("txtEpsilons").GetComponent<UnityEngine.UI.Text> ();
 		
-		txtPuntaje.text = string.Format ("Puntaje:{0}", ApplicationModel.puntaje);
+		txtPuntaje.text = string.Format ("Puntaje: {0}", ApplicationModel.puntaje);
 		txtAlfas.text = string.Format ("{0}", ApplicationModel.alfas);
 		txtBetas.text = string.Format ("{0}", ApplicationModel.betas);
 		txtGammas.text = string.Format ("{0}", ApplicationModel.gammas);
