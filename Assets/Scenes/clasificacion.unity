@@ -3994,6 +3994,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1522860970}
   - 212: {fileID: 1522860971}
+  - 61: {fileID: 1522860973}
+  - 114: {fileID: 1522860972}
   m_Layer: 0
   m_Name: mesa-01_1
   m_TagString: Untagged
@@ -4036,6 +4038,34 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300002, guid: 2978182f846ec064eb2d3bb4b06e6393, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1522860972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11457076, guid: 16189bde6ff55bc478d0e14d621e3c25,
+    type: 2}
+  m_PrefabInternal: {fileID: 372180178}
+  m_GameObject: {fileID: 1522860969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fcfad97f3cf34a4cb06940c74810be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 250
+  stopped: 0
+  actualSpeed: 0
+  busy: 0
+--- !u!61 &1522860973
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6157076, guid: 16189bde6ff55bc478d0e14d621e3c25,
+    type: 2}
+  m_PrefabInternal: {fileID: 372180178}
+  m_GameObject: {fileID: 1522860969}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 42.670002, y: 10.2400007}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1540561389
 GameObject:
   m_ObjectHideFlags: 0
