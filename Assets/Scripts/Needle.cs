@@ -47,7 +47,7 @@ public class Needle : MonoBehaviour {
 		}
 		else {
 			AnimationCurve curve = AnimationCurve.Linear(0, -5, 1, -5);
-			curve.AddKey(0.5f, -12.0f);
+			curve.AddKey(0.5f, -18.0f);
 			AnimationClip clip = new AnimationClip();
 			clip.SetCurve("", typeof(Transform), "localPosition.y", curve);
 			animation.AddClip(clip, "test");

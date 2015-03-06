@@ -5,9 +5,13 @@ public class HeadCol : MonoBehaviour {
 
 	public bool hit = false;
 	public BodyCol body;
+	public Animator embAnimator;
+	public WanderSteering wanderpath;
 
 	void Start () {
 		body = transform.parent.GetComponent<BodyCol> ();
+		embAnimator = transform.parent.transform.parent.GetComponent<Animator> ();
+		wanderpath = transform.parent.GetComponent<WanderSteering> ();
 	}
 
 	void Update () {
@@ -16,10 +20,11 @@ public class HeadCol : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.name == "inyectadora" && !hit && !body.hit) {
-			Debug.Log("Golpeo cabeza");
 			//GameObject head = Gamemaster.instance.actualEmbryo.transform.FindChild ("Cabeza").gameObject;
 			//head.GetComponent<SpriteRenderer>().color = new Color (255, 0, 0, 255);
 			hit = true;
+			wanderpath.wander = false;
+			embAnimator.Play ("death");
 			//GameObject body = Gamemaster.instance.actualEmbryo.transform.FindChild ("Tronco").gameObject;
 			//body.rigidbody2D.gravityScale = -0.1f;
 			//body.GetComponent<WanderSteering>().wander = false;
