@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 6c3bf9c28ddb044ba90518e34247858a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bg1-01_0
+    21300002: bg1-01_1
+    21300004: bg1-01_2
+    21300006: bg1-01_3
+    21300008: bg1-01_4
+    21300010: bg1-01_5
+    21300012: bg1-01_6
+    21300014: bg1-01_7
+    21300016: bg1-01_8
+    21300018: bg1-01_9
+    21300020: bg1-01_10
+    21300022: bg1-01_11
+    21300024: bg1-01_12
+    21300026: bg1-01_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bg1-01_0
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2204
+        width: 404
+        height: 703
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_1
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 2823
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_2
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 2540
+        width: 554
+        height: 416
+      alignment: 9
+      pivot: {x: .60114938, y: .919077933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_3
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 2545
+        width: 313
+        height: 80
+      alignment: 9
+      pivot: {x: .141937941, y: .73348695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_4
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 2218
+        width: 90
+        height: 170
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_5
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 2204
+        width: 67
+        height: 135
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_6
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 2204
+        width: 107
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_7
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 2209
+        width: 26
+        height: 224
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_8
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1757
+        width: 45
+        height: 250
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_9
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1752
+        width: 268
+        height: 278
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_10
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1761
+        width: 55
+        height: 242
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_11
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1878
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_12
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 1734
+        width: 71
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg1-01_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 38
+        width: 4411
+        height: 1607
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

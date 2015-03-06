@@ -162,6 +162,7 @@ GameObject:
   - 50: {fileID: 5095842}
   - 114: {fileID: 11493494}
   - 114: {fileID: 11461822}
+  - 232: {fileID: 23203348}
   m_Layer: 8
   m_Name: cuerpo
   m_TagString: Untagged
@@ -176,7 +177,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.92438698, y: -4.04935217, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495860}
@@ -306,8 +307,8 @@ Rigidbody2D:
   m_GameObject: {fileID: 195860}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
+  m_AngularDrag: .0199999996
+  m_GravityScale: .100000001
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -437,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a1bc7b30a71874f98661775b4a7128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wander_cycle_skip: 10
+  wander_cycle_skip: 50
   rand_jit: 5
   wanderAmt: .200000003
   wander_circle_radius: 5
@@ -664,6 +665,19 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300016, guid: 71002e136e5d3944c8087111c068ca98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!232 &23203348
+DistanceJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195860}
+  m_Enabled: 1
+  m_CollideConnected: 1
+  m_ConnectedRigidBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: .680000007, y: .983891487}
+  m_Distance: 1
+  m_MaxDistanceOnly: 1
 --- !u!233 &23310130
 HingeJoint2D:
   m_ObjectHideFlags: 1

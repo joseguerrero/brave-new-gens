@@ -5,7 +5,7 @@ public class Correa : MonoBehaviour {
 
 	public float speed = 100.0f;
 	public bool stopped = false;
-	private float actualSpeed;
+	public float actualSpeed;
 	public bool busy = false;
 
 	void Start(){

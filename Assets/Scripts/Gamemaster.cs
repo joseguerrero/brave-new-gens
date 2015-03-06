@@ -49,7 +49,7 @@ public class Gamemaster : MonoBehaviour
 	}
 
 	public void SpawnSubject(){
-		Instantiate(subject, new Vector2(3.0f, -5.0f), transform.rotation);
+		Instantiate(subject, new Vector2(-20.0f, -8.0f), transform.rotation);
 		//playerControl = true;
 	}
 

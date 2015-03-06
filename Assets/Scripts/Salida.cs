@@ -18,19 +18,15 @@ public class Salida : MonoBehaviour {
 
 		if (col.name == "cuerpo") {
 			Destroy(col.transform.parent.gameObject);
-			Gamemaster.instance.SpawnSubject ();
 		}
-
 
 		//Destroy (Gamemaster.instance.actualEmbryo);
 		//Destroy (Gamemaster.instance.actualFlask);
 		//Gamemaster.instance.correa.GetComponent<Correa> ().busy = false;
 
-
-
 		Gamemaster.instance.headHit = false;
 		Gamemaster.instance.bodyHit = false;
-		Gamemaster.instance.playerControl = false;
+		//Gamemaster.instance.playerControl = false;
 	}
 
 }

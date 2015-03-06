@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 44c0d22505dbf4e8ba3fecdc178febc0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bg2-01_0
+    21300002: bg2-01_1
+    21300004: bg2-01_2
+    21300006: bg2-01_3
+    21300008: bg2-01_4
+    21300010: bg2-01_5
+    21300012: bg2-01_6
+    21300014: bg2-01_7
+    21300016: bg2-01_8
+    21300018: bg2-01_9
+    21300020: bg2-01_10
+    21300022: bg2-01_11
+    21300024: bg2-01_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bg2-01_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3030
+        width: 4298
+        height: 3224
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_1
+      rect:
+        serializedVersion: 2
+        x: 4978
+        y: 5839
+        width: 287
+        height: 338
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_2
+      rect:
+        serializedVersion: 2
+        x: 5003
+        y: 5647
+        width: 230
+        height: 64
+      alignment: 9
+      pivot: {x: .1599482, y: .395248413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_3
+      rect:
+        serializedVersion: 2
+        x: 5003
+        y: 5469
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_4
+      rect:
+        serializedVersion: 2
+        x: 5290
+        y: 5443
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_5
+      rect:
+        serializedVersion: 2
+        x: 5048
+        y: 5226
+        width: 51
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_6
+      rect:
+        serializedVersion: 2
+        x: 5227
+        y: 5213
+        width: 70
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_7
+      rect:
+        serializedVersion: 2
+        x: 5073
+        y: 5054
+        width: 77
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_8
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 4932
+        width: 19
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_9
+      rect:
+        serializedVersion: 2
+        x: 4854
+        y: 4499
+        width: 423
+        height: 328
+      alignment: 9
+      pivot: {x: .436605394, y: .861082494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2563
+        width: 179
+        height: 186
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_11
+      rect:
+        serializedVersion: 2
+        x: 4882
+        y: 335
+        width: 1155
+        height: 2580
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg2-01_12
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 297
+        width: 4279
+        height: 2171
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
