@@ -2954,6 +2954,15 @@ MonoBehaviour:
   movspeed: .100000001
   edge_left: -18
   edge_right: 18
+  dosis:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: .00689673424, b: 1, a: 1}
+  - {r: 0, g: .911764681, b: .00628819875, a: 1}
+  - {r: .937880278, g: .992647052, b: 0, a: 1}
+  - {r: .737931252, g: 0, b: 1, a: 1}
+  actualDose: {r: 0, g: 0, b: 0, a: 0}
+  marcador: {fileID: 1695393369}
+  doseIndex: 2
 --- !u!1 &1266173981
 GameObject:
   m_ObjectHideFlags: 0

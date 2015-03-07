@@ -7,9 +7,13 @@ public class Robot : MonoBehaviour {
 	public float movspeed;
 	public float edge_left;
 	public float edge_right;
+	public Color[] dosis;
+	public Color actualDose;
+	public GameObject marcador;
+	public int doseIndex = 2;
 	
 	void Start () {
-
+		SetDose ();
 	}
 
 	void Update () {
@@ -23,5 +27,26 @@ public class Robot : MonoBehaviour {
 					transform.position = new Vector2(transform.position.x + movspeed, transform.position.y);
 			}
 		}
+	}
+
+	void FixedUpdate(){
+		if (Gamemaster.instance.playerControl) {
+			if (Input.GetKeyDown(KeyCode.UpArrow)){
+				if (doseIndex >= 1){
+					doseIndex -= 1;
+					SetDose();
+				}
+			}
+			else if (Input.GetKeyDown(KeyCode.DownArrow)){
+				if (doseIndex < dosis.Length-1){
+					doseIndex += 1;
+					SetDose();
+				}
+			}
+		}
+	}
+
+	void SetDose(){
+		marcador.GetComponent<SpriteRenderer> ().color = dosis [doseIndex];
 	}
 }
