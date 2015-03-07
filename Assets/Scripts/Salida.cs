@@ -14,8 +14,7 @@ public class Salida : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 		Debug.Log ("Muerte, destruccion, cumbia!");
 		Destroy (col.gameObject);
-
-
+		
 		if (col.name == "cuerpo") {
 			Destroy(col.transform.parent.gameObject);
 		}

@@ -11,8 +11,7 @@ public class FlaskColor : MonoBehaviour {
 		casta = Random.Range (0, castas.Length - 1);
 		liquido.GetComponent<SpriteRenderer> ().color = castas [casta];
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 	
 	}

@@ -20,6 +20,7 @@ public class WanderVehicle : MonoBehaviour {
 
 	
 	void Start () {
+
 	}
 	
 	void FixedUpdate()

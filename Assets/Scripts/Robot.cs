@@ -11,6 +11,7 @@ public class Robot : MonoBehaviour {
 	public Color actualDose;
 	public GameObject marcador;
 	public int doseIndex = 2;
+	public int maxdoses = 3;
 	
 	void Start () {
 		SetDose ();
@@ -49,4 +50,11 @@ public class Robot : MonoBehaviour {
 	void SetDose(){
 		marcador.GetComponent<SpriteRenderer> ().color = dosis [doseIndex];
 	}
+	
+	IEnumerator RespawnDoses() {
+		yield return new WaitForSeconds (2);
+		//actualFlask = (GameObject) Instantiate(prefFlask, new Vector2(-21.0f, 1.0f), transform.rotation);
+	}
+
+
 }

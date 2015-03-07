@@ -2963,6 +2963,7 @@ MonoBehaviour:
   actualDose: {r: 0, g: 0, b: 0, a: 0}
   marcador: {fileID: 1695393369}
   doseIndex: 2
+  maxdoses: 3
 --- !u!1 &1266173981
 GameObject:
   m_ObjectHideFlags: 0
