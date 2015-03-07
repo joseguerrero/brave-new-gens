@@ -16,7 +16,6 @@ public class Sensor : MonoBehaviour {
 		if (hit.collider != null &&  hit.collider.name == "Envase(Clone)" && !Gamemaster.instance.correa.GetComponent<Correa> ().busy ) {
 			if (!Gamemaster.instance.correa.GetComponent<Correa> ().stopped){
 				Gamemaster.instance.correa.GetComponent<Correa> ().Stop ();
-				Gamemaster.instance.SpawnEmbWrap ();
 			}
 		}
 	}

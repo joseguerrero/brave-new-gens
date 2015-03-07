@@ -1035,6 +1035,8 @@ MonoBehaviour:
   hit: 0
   head: {fileID: 0}
   embAnimator: {fileID: 0}
+  n_iny: 1
+  flask: {fileID: 0}
 --- !u!114 &11424222
 MonoBehaviour:
   m_ObjectHideFlags: 1

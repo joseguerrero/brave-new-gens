@@ -6,10 +6,13 @@ public class BodyCol : MonoBehaviour {
 	public bool hit = false;
 	public HeadCol head;
 	public Animator embAnimator;
+	public int n_iny = 1;
+	public FlaskColor flask;
 	
 	void Start () {
 		head = transform.FindChild ("cabeza").GetComponent<HeadCol> ();
 		embAnimator = transform.parent.GetComponent<Animator> ();
+		flask = transform.parent.transform.parent.FindChild ("frasco").GetComponent<FlaskColor> ();
 	}
 
 	void Update () {
@@ -18,15 +21,11 @@ public class BodyCol : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.name == "inyectadora" && !hit && !head.hit) {
-			Debug.Log("Golpeo cuerpo");
 			StartCoroutine(BodyHit());
-			//Gamemaster.instance.headHit = true;
-			//GameObject head = Gamemaster.instance.actualEmbryo.transform.FindChild ("Tronco").gameObject;
-			//head.GetComponent<SpriteRenderer>().color = new Color (0, 255, 0, 255);
-			//Gamemaster.instance.correa.GetComponent<Correa>().Run();
-			//Gamemaster.instance.SpawnFlaskWrap ();
-			Gamemaster.instance.score += 50.0f;
-			Gamemaster.instance.textScore.text = "Puntuacion: " + Gamemaster.instance.score;
+			if (flask.casta == col.GetComponent<Needle>().doseIndex){
+				Gamemaster.instance.score += (5.0f * n_iny);
+				Gamemaster.instance.textScore.text = "Puntuacion: " + Gamemaster.instance.score;
+			}
 		}
 	}
 
