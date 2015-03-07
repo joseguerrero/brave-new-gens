@@ -10,7 +10,6 @@ public class WanderVehicle : MonoBehaviour {
 	public float mass = 1.0f;
 	public float rotation_speed = 1.0f;
 	public float maxspeed = 10.0f;
-	//Vector3 position;
 	Vector3 up;
 	Vector3 side;
 	Vector3 forward = new Vector3 (0,1,0);
@@ -23,38 +22,28 @@ public class WanderVehicle : MonoBehaviour {
 
 	}
 	
-	void FixedUpdate()
-	{
+	void FixedUpdate() {
 		
 	}
+
 	void Update () {
-	
 		UpdateVelocity();	
 		UpdatePosition();
 		UpdateLocalCoords();
-		
 		transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(forward,new Vector3(0,0,-1)),Time.deltaTime*rotation_speed);
-		//if (velocity.magnitude!=0)
-		//	transform.forward = Vector3.Lerp(transform.forward,velocity.normalized,rotation_speed*Time.deltaTime);		
-		//transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(velocity),Time.deltaTime*rotation_speed);
 	}
 
 	public void UpdateVelocity(){	
-		//use Physics equations  A=F/M , v2=v1+AT
 		steering_force = this.GetComponent<WanderSteering>().Calculate();
 		steering_force = truncate(steering_force,max_force);
 		acceleration = steering_force/mass;
 		velocity = truncate(velocity+acceleration, maxspeed);
-		//trueAcceleration = maxspeed - Vector3.Magnitude(velocity);
 		velocity += this.GetComponent<WanderSteering>().CalculateWallCollision();
 	}
 	
 	private void UpdateLocalCoords(){
 		if (velocity.magnitude >= 0.05f)
 			forward = Vector3.Normalize(velocity);
-		//Vector3 temp_up = Vector3.Normalize(up);
-		//side = Vector3.Cross(forward,temp_up);
-		//up = Vector3.Cross(forward,side);
 	}
 	
 	public void UpdatePosition(){
