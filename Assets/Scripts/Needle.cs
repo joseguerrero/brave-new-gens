@@ -132,18 +132,18 @@ public class Needle : MonoBehaviour {
 	
 	void RespawnDoses() {
 		if (dose_A<maxdoses)
-			dose_A += 1;
+			dose_A += 3;
 			
 		if (dose_B<maxdoses)
-			dose_B += 1;
+			dose_B += 3;
 			
 		if (dose_G<maxdoses)
-			dose_G += 1;
+			dose_G += 3;
 			
 		if (dose_D<maxdoses)
-			dose_D += 1;
+			dose_D += 3;
 			
 		if (dose_E<maxdoses)
-			dose_E += 1;
+			dose_E += 3;
 	}
 }

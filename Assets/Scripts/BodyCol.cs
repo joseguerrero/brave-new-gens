@@ -24,6 +24,7 @@ public class BodyCol : MonoBehaviour {
 			StartCoroutine(BodyHit());
 			if (flask.casta == col.GetComponent<Needle>().doseIndex){
 				Gamemaster.instance.score += (5.0f * n_iny);
+				n_iny += 1;
 				Gamemaster.instance.textScore.text = "Puntuacion: " + Gamemaster.instance.score;
 			}
 		}
