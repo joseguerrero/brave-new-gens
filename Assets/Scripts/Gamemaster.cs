@@ -6,19 +6,18 @@ public class Gamemaster : MonoBehaviour
 {
 	private static Gamemaster _instance;
 	public bool playerControl = true;
-	public bool headHit = false;
-	public bool bodyHit = false;
-	public Object prefFlask;
-	public Object prefEmbryo;
 	public Object subject;
-	public GameObject actualEmbryo;
-	public GameObject actualFlask;
 	public GameObject correa;
 	public float sensorDistance;
 	public float score;
 	public int kills;
 	public Text textScore;
 	public Text textKills;
+	public Text dA;
+	public Text dB;
+	public Text dG;
+	public Text dD;
+	public Text dE;
 	
 	public static Gamemaster instance {
 		get {
@@ -45,50 +44,18 @@ public class Gamemaster : MonoBehaviour
 		Gamemaster.instance.textScore.text = "Puntuacion: 0";
 		Gamemaster.instance.textKills.text = "Muertes: 0";
 		SpawnSubject ();
-		//StartCoroutine (SpawnFlask ());
 	}
 
 	public void SpawnSubject(){
-		Instantiate(subject, new Vector2(-20.0f, -8.0f), transform.rotation);
-		//playerControl = true;
-	}
-
-	public void SpawnEmbWrap(){
-		//StartCoroutine (SpawnEmbryo ());
-	}
-
-	IEnumerator SpawnEmbryo() {
-		correa.GetComponent<Correa> ().busy = true;
-		yield return new WaitForSeconds (2);
-		actualEmbryo = (GameObject) Instantiate(prefEmbryo, new Vector2(0.0f, -5.0f), transform.rotation);
-		playerControl = true;
-	}
-
-	public void SpawnFlaskWrap(){
-		//StartCoroutine (SpawnFlask ());
-	}
-
-	IEnumerator SpawnFlask() {
-		yield return new WaitForSeconds (2);
-		actualFlask = (GameObject) Instantiate(prefFlask, new Vector2(-21.0f, 1.0f), transform.rotation);
-	}
-
-
-	IEnumerator EmbryoKilled(GameObject go) {
-		yield return new WaitForSeconds (6);
-		correa.GetComponent<Correa> ().Run ();
-		yield return new WaitForSeconds (6);
-		Destroy (go);
-		correa.GetComponent<Correa> ().busy = false;
+		Instantiate(subject, new Vector2(-25.0f, -8.0f), transform.rotation);
 	}
 	
-	IEnumerator EmbryoLives() {
-		yield return new WaitForSeconds (6);
-		correa.GetComponent<Correa> ().Run ();
-		yield return new WaitForSeconds (6);
-		correa.GetComponent<Correa> ().busy = false;
+	void Update () {
+		if (score >= 100) {
+			Application.LoadLevel("victoria_n1");
+		}
+		if (kills >= 3) {
+			Application.LoadLevel("derrota_n1");
+		}
 	}
-
-
-
 }

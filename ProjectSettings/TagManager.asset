@@ -51,3 +51,11 @@ TagManager:
     userID: 1
     uniqueID: 3501436087
     locked: 0
+  - name: background
+    userID: 2
+    uniqueID: 4022878223
+    locked: 0
+  - name: makina
+    userID: 3
+    uniqueID: 3548349325
+    locked: 0
