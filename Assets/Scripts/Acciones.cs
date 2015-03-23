@@ -11,7 +11,6 @@ public class Acciones : MonoBehaviour {
 		dist = Camera.main.WorldToScreenPoint(transform.position);
 		posX = Input.mousePosition.x - dist.x;
 		posY = Input.mousePosition.y - dist.y;
-		
 	}
 	
 	void OnMouseDrag(){

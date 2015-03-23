@@ -5,12 +5,14 @@ using UnityEngine.UI;
 public class EnvaseClass : MonoBehaviour {
 
 	private Atributos atributos;
-	
+
+	/*
 	static Text txtAtencion;
 	static Text txtFortaleza;
 	static Text txtHabilidadMotora;
 	static Text txtInteligencia;
 	static Text txtResiliencia;
+	*/
 
 	public static void CreateEnvase ()
 	{
@@ -20,11 +22,14 @@ public class EnvaseClass : MonoBehaviour {
 		GameObject envaseClone = (GameObject)Object.Instantiate (ObjEnvase, posicionInicial, new Quaternion());
 		envaseClone.rigidbody.velocity = direccionInicial * ApplicationModel.speedFlask;
 		envaseClone.AddComponent<Atributos> ();
+		envaseClone.GetComponent<Atributos> ().casta = GenerarRandom (6);
+		/*
 		envaseClone.GetComponent<Atributos>().inteligencia = GenerarRandom();
 		envaseClone.GetComponent<Atributos>().atencion = GenerarRandom();
 		envaseClone.GetComponent<Atributos>().fortaleza = GenerarRandom();
 		envaseClone.GetComponent<Atributos>().habilidad = GenerarRandom();
 		envaseClone.GetComponent<Atributos>().resiliencia = GenerarRandom();
+
 
 		txtAtencion = GameObject.Find ("txtAtencion").GetComponent<UnityEngine.UI.Text> ();
 		txtFortaleza = GameObject.Find ("txtFortaleza").GetComponent<UnityEngine.UI.Text> ();
@@ -37,6 +42,7 @@ public class EnvaseClass : MonoBehaviour {
 		txtHabilidadMotora.text = string.Format ("{0}", envaseClone.GetComponent<Atributos>().habilidad);
 		txtInteligencia.text = string.Format ("{0}", envaseClone.GetComponent<Atributos>().inteligencia);
 		txtResiliencia.text = string.Format ("{0}", envaseClone.GetComponent<Atributos>().resiliencia);
+		*/
 	}
 
 	/// <summary>
@@ -46,6 +52,11 @@ public class EnvaseClass : MonoBehaviour {
 	static int GenerarRandom ()
 	{
 		return Random.Range (1, 4);
+	}
+
+	static int GenerarRandom (int castaTope)
+	{
+		return Random.Range (1, castaTope);
 	}
 }
 
