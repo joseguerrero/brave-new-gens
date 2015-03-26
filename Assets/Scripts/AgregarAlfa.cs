@@ -3,13 +3,13 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class AgregarAlfa : MonoBehaviour {
-	Text txtInteligencia;
-	Text txtAtencion;
+	//Text txtInteligencia;
+	//Text txtAtencion;
 
 	// Use this for initialization
 	void Start () {
-		txtInteligencia = GameObject.Find ("txtInteligencia").GetComponent<UnityEngine.UI.Text>();
-		txtAtencion = GameObject.Find ("txtAtencion").GetComponent<UnityEngine.UI.Text>();
+		//txtInteligencia = GameObject.Find ("txtInteligencia").GetComponent<UnityEngine.UI.Text>();
+		//txtAtencion = GameObject.Find ("txtAtencion").GetComponent<UnityEngine.UI.Text>();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +19,7 @@ public class AgregarAlfa : MonoBehaviour {
 	
 	void OnTriggerEnter (Collider other)
 	{
-		if ((txtInteligencia.text=="3") && (txtAtencion.text=="3")) {
+		if (other.GetComponent<Atributos>().casta == (int)ApplicationModel.Casta.alfa) {
 			ApplicationModel.alfas += 1;
 			ApplicationModel.puntaje += ApplicationModel.constAgregar;
 			//AudioSource.PlayClipAtPoint(keyGrab, transform.position);

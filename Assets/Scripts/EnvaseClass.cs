@@ -22,7 +22,32 @@ public class EnvaseClass : MonoBehaviour {
 		GameObject envaseClone = (GameObject)Object.Instantiate (ObjEnvase, posicionInicial, new Quaternion());
 		envaseClone.rigidbody.velocity = direccionInicial * ApplicationModel.speedFlask;
 		envaseClone.AddComponent<Atributos> ();
-		envaseClone.GetComponent<Atributos> ().casta = GenerarRandom (6);
+		int casta = GenerarRandom (6);
+		//int casta = 0;
+		envaseClone.GetComponent<Atributos> ().casta = casta;
+		envaseClone.AddComponent<SpriteRenderer>();
+		// Asigna la imagen de la casta 
+		switch (casta) {
+		case 0: //Alfa
+			envaseClone.GetComponent<SpriteRenderer>().sprite = JuegoClasificacion.letraSprites[0];
+			break;
+		case 1: //Beta
+			envaseClone.GetComponent<SpriteRenderer>().sprite = JuegoClasificacion.letraSprites[1];
+			break;
+		case 2: // Gamma
+			envaseClone.GetComponent<SpriteRenderer>().sprite = JuegoClasificacion.letraSprites[2];
+			break;
+		case 3: // Delta
+			envaseClone.GetComponent<SpriteRenderer>().sprite = JuegoClasificacion.letraSprites[3];
+			break;
+		case 4: // Epsilon
+			envaseClone.GetComponent<SpriteRenderer>().sprite = JuegoClasificacion.letraSprites[4];
+			break;
+		default:
+			break;
+		}
+		envaseClone.GetComponent<SpriteRenderer>().sortingLayerName="Casta";
+		#region old
 		/*
 		envaseClone.GetComponent<Atributos>().inteligencia = GenerarRandom();
 		envaseClone.GetComponent<Atributos>().atencion = GenerarRandom();
@@ -43,6 +68,7 @@ public class EnvaseClass : MonoBehaviour {
 		txtInteligencia.text = string.Format ("{0}", envaseClone.GetComponent<Atributos>().inteligencia);
 		txtResiliencia.text = string.Format ("{0}", envaseClone.GetComponent<Atributos>().resiliencia);
 		*/
+		#endregion
 	}
 
 	/// <summary>
@@ -56,7 +82,7 @@ public class EnvaseClass : MonoBehaviour {
 
 	static int GenerarRandom (int castaTope)
 	{
-		return Random.Range (1, castaTope);
+		return Random.Range (0, castaTope);
 	}
 }
 

@@ -38,6 +38,13 @@ public class ApplicationModel {
 		txtGammas.text = string.Format ("{0}", ApplicationModel.gammas);
 		txtDeltas.text = string.Format ("{0}", ApplicationModel.deltas);
 		txtEpsilons.text = string.Format ("{0}", ApplicationModel.epsilons);
-		
+	}
+
+	public enum Casta {
+		alfa,
+		beta,
+		gamma,
+		delta,
+		epsilon
 	}
 }

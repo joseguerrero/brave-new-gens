@@ -4,13 +4,13 @@ using UnityEngine.UI;
 
 public class AgregarBetas : MonoBehaviour
 {
-	Text txtInteligencia;
-	Text txtResiliencia;
+	//Text txtInteligencia;
+	//Text txtResiliencia;
 	
 	// Use this for initialization
 	void Start () {
-		txtInteligencia = GameObject.Find ("txtInteligencia").GetComponent<UnityEngine.UI.Text>();
-		txtResiliencia = GameObject.Find ("txtResiliencia").GetComponent<UnityEngine.UI.Text>();
+		//txtInteligencia = GameObject.Find ("txtInteligencia").GetComponent<UnityEngine.UI.Text>();
+		//txtResiliencia = GameObject.Find ("txtResiliencia").GetComponent<UnityEngine.UI.Text>();
 	}
 	
 	// Update is called once per frame
@@ -20,7 +20,7 @@ public class AgregarBetas : MonoBehaviour
 	
 	void OnTriggerEnter (Collider other)
 	{
-		if ((txtInteligencia.text == "3") && (txtResiliencia.text == "3")) {
+		if (other.GetComponent<Atributos>().casta == (int)ApplicationModel.Casta.beta) {
 			ApplicationModel.betas += 1;
 			ApplicationModel.puntaje += ApplicationModel.constAgregar;
 		

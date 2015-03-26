@@ -3,7 +3,13 @@ using System.Collections;
 
 public class JuegoClasificacion : MonoBehaviour {
 	public float velocidadEmbrion;
-
+	public static Sprite[] letraSprites;
+	
+	void Awake()
+	{
+		// load all frames in letrasSprites array
+		letraSprites = Resources.LoadAll<Sprite>("letras");
+	}
 	// Use this for initialization
 	void Start () {
 		ApplicationModel.puntaje = 0;
