@@ -16,6 +16,7 @@ public class ApplicationModel {
 	public static int constAgregar;
 	public static int constPerdido;
 	public static int constReciclar;
+	public static int constDetenido;
 
 	static Text txtPuntaje;
 	static Text txtAlfas;
@@ -23,6 +24,9 @@ public class ApplicationModel {
 	static Text txtGammas;
 	static Text txtDeltas;
 	static Text txtEpsilons;
+
+	//public static float speedInspector1;
+	//public static float speedInspector2;
 
 	public static void ActualizarContadores(){
 		txtPuntaje = GameObject.FindGameObjectWithTag("txtpuntaje").GetComponent<UnityEngine.UI.Text>();
