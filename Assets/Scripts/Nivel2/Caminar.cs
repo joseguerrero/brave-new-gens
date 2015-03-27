@@ -4,11 +4,10 @@ using System.Collections;
 public class Caminar : MonoBehaviour {
 	public float speedInspector;
 	Vector3 direccionInicial;
-	Vector3 rotacion;
+
 	// Use this for initialization
 	void Start () {
 		direccionInicial = new Vector3 (1, 0, 0);
-		rotacion = new Vector3 (0, 180, 0);
 	}
 	
 	// Update is called once per frame
