@@ -23,7 +23,6 @@ public class EnvaseClass : MonoBehaviour {
 		envaseClone.rigidbody.velocity = direccionInicial * ApplicationModel.speedFlask;
 		envaseClone.AddComponent<Atributos> ();
 		int casta = GenerarRandom (6);
-		//int casta = 0;
 		envaseClone.GetComponent<Atributos> ().casta = casta;
 		envaseClone.AddComponent<SpriteRenderer>();
 		// Asigna la imagen de la casta 

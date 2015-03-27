@@ -31,8 +31,12 @@ public class Acciones : MonoBehaviour {
 				EnvaseClass.CreateEnvase ();
 				break;
 
+			case "inspector":
+				DescontarPuntaje(ApplicationModel.constDetenido);
+				break;
+
 			case "limbo":
-				DescontarPuntaje(1);
+				DescontarPuntaje(ApplicationModel.constPerdido);
 				break;
 
 			default:
@@ -42,7 +46,7 @@ public class Acciones : MonoBehaviour {
 
 	void DescontarPuntaje (int puntos)
 	{
-		ApplicationModel.puntaje -= ApplicationModel.constPerdido;
+		ApplicationModel.puntaje -= puntos;
 		Destroy(gameObject);
 		ApplicationModel.ActualizarContadores ();
 		EnvaseClass.CreateEnvase ();
