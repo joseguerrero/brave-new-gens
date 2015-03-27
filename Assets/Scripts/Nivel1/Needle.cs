@@ -11,62 +11,62 @@ public class Needle : MonoBehaviour {
 	public GameObject embryo;
 	public GameObject flask;
 	*/
-
-
-	private bool cd;
+	
 	public float distance;
 	public Collider2D actualCol;
 	int layerMask = 1 << 8;
 	public Color[] dosis;
 	public GameObject marcador;
 	public int doseIndex = 2;
-	public int maxdoses = 3;
-	public int dose_A; // rojo
-	public int dose_B; // azul
-	public int dose_G; // verde
-	public int dose_D; // amarillo
-	public int dose_E; // morado
-
+	public int maxdoses = 1;
+	
 	void Start () {
 		SetDose ();
-		InvokeRepeating ("RespawnDoses", 1, 30);
 	}
 
 	void Update () {
-		if (Gamemaster.instance.playerControl){
-			if (Input.GetKeyDown (KeyCode.Space) && !cd) {
-				switch (doseIndex){
-				case 0:
-					if (dose_A >= 1){
-						dose_A -= 1;
-						Inyectar();
-					}
-					break;
-				case 1:
-					if (dose_B >= 1){
-						dose_B -= 1;
-						Inyectar();
-					}
-					break;
-				case 2:
-					if (dose_G >= 1){
-						dose_G -= 1;
-						Inyectar();
-					}
-					break;
-				case 3:
-					if (dose_D >= 1){
-						dose_D -= 1;
-						Inyectar();
-					}
-					break;
-				case 4:
-					if (dose_E >= 1){
-						dose_E -= 1;
-						Inyectar();
-					}
-					break;
+		if (Input.GetKeyDown (KeyCode.Space) &&  Gamemaster.instance.playerControl){
+			switch (doseIndex){
+			case 0:
+				if (Gamemaster.instance.dose_A >= 1){
+					Gamemaster.instance.dA.GetComponent<Animator>().enabled = true;
+					Gamemaster.instance.dA.GetComponent<Animator>().Play("dA_Spend");
+					Gamemaster.instance.dose_A -= 1;
+					Inyectar();
 				}
+				break;
+			case 1:
+				if (Gamemaster.instance.dose_B >= 1){
+					Gamemaster.instance.dB.GetComponent<Animator>().enabled = true;
+					Gamemaster.instance.dB.GetComponent<Animator>().Play("dB_Spend");
+					Gamemaster.instance.dose_B -= 1;
+					Inyectar();
+				}
+				break;
+			case 2:
+				if (Gamemaster.instance.dose_G >= 1){
+					Gamemaster.instance.dG.GetComponent<Animator>().enabled = true;
+					Gamemaster.instance.dG.GetComponent<Animator>().Play("dG_Spend");
+					Gamemaster.instance.dose_G -= 1;
+					Inyectar();
+				}
+				break;
+			case 3:
+				if (Gamemaster.instance.dose_D >= 1){
+					Gamemaster.instance.dD.GetComponent<Animator>().enabled = true;
+					Gamemaster.instance.dD.GetComponent<Animator>().Play("dD_Spend");
+					Gamemaster.instance.dose_D -= 1;
+					Inyectar();
+				}
+				break;
+			case 4:
+				if (Gamemaster.instance.dose_E >= 1){
+					Gamemaster.instance.dE.GetComponent<Animator>().enabled = true;
+					Gamemaster.instance.dE.GetComponent<Animator>().Play("dE_Spend");
+					Gamemaster.instance.dose_E -= 1;
+					Inyectar();
+				}
+				break;
 			}
 		}
 	}
@@ -97,18 +97,11 @@ public class Needle : MonoBehaviour {
 		
 		if (hit.collider != null) {
 			actualCol = hit.collider;
-			//Debug.DrawLine(transform.position, hit.collider.transform.position, new Color(0, 0, 255), 0.1f);
 			Debug.DrawRay(transform.position, hit.collider.transform.position, new Color(0, 0, 255), 0.1f);
-			//texto.text = hit.collider.name;
 		}
 		else {
 			actualCol = null;
 		}
-		Gamemaster.instance.dA.text = "Dosis Alfas: " + dose_A;
-		Gamemaster.instance.dB.text = "Dosis Betas: " + dose_B;
-		Gamemaster.instance.dG.text = "Dosis Gammas: " + dose_G;
-		Gamemaster.instance.dD.text = "Dosis Deltas: " + dose_D;
-		Gamemaster.instance.dE.text = "Dosis Epsilons: " + dose_E;
 	}
 
 	void generateAnim(){
@@ -129,34 +122,15 @@ public class Needle : MonoBehaviour {
 	}
 	
 	IEnumerator NeedleCD() {
-		cd = true;
 		Gamemaster.instance.playerControl = false;
 		yield return new WaitForSeconds (1);
-		cd = false;
 		Gamemaster.instance.playerControl = true;
 	}
 
 	void SetDose(){
 		marcador.GetComponent<SpriteRenderer> ().color = dosis [doseIndex];
 	}
-	
-	void RespawnDoses() {
-		if (dose_A<maxdoses)
-			dose_A += 1;
-			
-		if (dose_B<maxdoses)
-			dose_B += 1;
-			
-		if (dose_G<maxdoses)
-			dose_G += 1;
-			
-		if (dose_D<maxdoses)
-			dose_D += 1;
-			
-		if (dose_E<maxdoses)
-			dose_E += 1;
-	}
-	
+
 	/*
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space) && reposo && !cd) {

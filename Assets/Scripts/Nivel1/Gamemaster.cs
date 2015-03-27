@@ -13,11 +13,16 @@ public class Gamemaster : MonoBehaviour
 	public int kills;
 	public Text textScore;
 	public Text textKills;
-	public Text dA;
-	public Text dB;
-	public Text dG;
-	public Text dD;
-	public Text dE;
+	public int dose_A = 1; // rojo
+	public int dose_B = 1; // naranja
+	public int dose_G = 1; // verde
+	public int dose_D = 1; // amarillo
+	public int dose_E = 1; // morado
+	public GameObject dA;
+	public GameObject dB;
+	public GameObject dG;
+	public GameObject dD;
+	public GameObject dE;
 	
 	public static Gamemaster instance {
 		get {
