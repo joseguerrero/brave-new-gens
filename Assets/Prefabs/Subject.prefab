@@ -440,7 +440,7 @@ GameObject:
   - 60: {fileID: 6051890}
   - 114: {fileID: 11414524}
   m_Layer: 0
-  m_Name: frasco
+  m_Name: Frasco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
