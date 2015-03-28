@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: f9748c304978b5c47ac8f6c28414b274
+timeCreated: 1427491511
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: inyectadora-01_0
+    21300002: inyectadora-01_1
+    21300004: inyectadora-01_2
+    21300006: inyectadora-01_3
+    21300008: inyectadora-01_4
+    21300010: inyectadora-01_5
+    21300012: inyectadora-01_6
+    21300014: inyectadora-01_7
+    21300016: inyectadora-01_8
+    21300018: inyectadora-01_9
+    21300020: inyectadora-01_10
+    21300022: inyectadora-01_11
+    21300024: inyectadora-01_12
+    21300026: inyectadora-01_13
+    21300028: inyectadora-01_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: inyectadora-01_0
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 4210
+        width: 3260
+        height: 2877
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_1
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 3352
+        width: 119
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_2
+      rect:
+        serializedVersion: 2
+        x: 3017
+        y: 3408
+        width: 115
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_3
+      rect:
+        serializedVersion: 2
+        x: 4269
+        y: 3950
+        width: 42
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_4
+      rect:
+        serializedVersion: 2
+        x: 4871
+        y: 3566
+        width: 119
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_5
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 173
+        width: 276
+        height: 3410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_6
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 3562
+        width: 151
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_7
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1152
+        width: 143
+        height: 1921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_8
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 2486
+        width: 221
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_9
+      rect:
+        serializedVersion: 2
+        x: 4042
+        y: 2905
+        width: 563
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_10
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 2579
+        width: 343
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_11
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 2562
+        width: 168
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_12
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 2579
+        width: 98
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_13
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1674
+        width: 1021
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: inyectadora-01_14
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 1695
+        width: 95
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

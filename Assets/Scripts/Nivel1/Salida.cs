@@ -12,8 +12,8 @@ public class Salida : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D col){
-		Debug.Log ("Muerte, destruccion, cumbia!");
-		if (col.name == "frasco") {
+		//Debug.Log ("Muerte, destruccion, cumbia!");
+		if (col.name == "Frasco") {
 			Destroy(col.transform.parent.gameObject);
 		}
 	}

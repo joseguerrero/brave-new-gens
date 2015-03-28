@@ -23,6 +23,9 @@ public class Gamemaster : MonoBehaviour
 	public GameObject dG;
 	public GameObject dD;
 	public GameObject dE;
+	public Object hint;
+	public string hintColor;
+	public Canvas canvas;
 	
 	public static Gamemaster instance {
 		get {

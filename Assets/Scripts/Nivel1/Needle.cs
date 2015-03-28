@@ -34,6 +34,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dose_A -= 1;
 					Inyectar();
 				}
+				else {
+					Gamemaster.instance.hintColor = "A";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
+				}
 				break;
 			case 1:
 				if (Gamemaster.instance.dose_B >= 1){
@@ -41,6 +46,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dB.GetComponent<Animator>().Play("dB_Spend");
 					Gamemaster.instance.dose_B -= 1;
 					Inyectar();
+				}
+				else {
+					Gamemaster.instance.hintColor = "B";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
 				}
 				break;
 			case 2:
@@ -50,6 +60,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dose_G -= 1;
 					Inyectar();
 				}
+				else {
+					Gamemaster.instance.hintColor = "G";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
+				}
 				break;
 			case 3:
 				if (Gamemaster.instance.dose_D >= 1){
@@ -58,6 +73,12 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dose_D -= 1;
 					Inyectar();
 				}
+				else {
+					Gamemaster.instance.hintColor = "D";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
+
+				}
 				break;
 			case 4:
 				if (Gamemaster.instance.dose_E >= 1){
@@ -65,6 +86,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dE.GetComponent<Animator>().Play("dE_Spend");
 					Gamemaster.instance.dose_E -= 1;
 					Inyectar();
+				}
+				else {
+					Gamemaster.instance.hintColor = "E";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
 				}
 				break;
 			}

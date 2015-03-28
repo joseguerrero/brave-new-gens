@@ -373,6 +373,9 @@ MonoBehaviour:
   dG: {fileID: 296890088}
   dD: {fileID: 71258052}
   dE: {fileID: 1391007224}
+  hint: {fileID: 178474, guid: 6cfb37d1a002bc645bbb96928d9c9d5d, type: 2}
+  hintColor: 
+  canvas: {fileID: 1747893188}
 --- !u!4 &61138805
 Transform:
   m_ObjectHideFlags: 0
@@ -4554,7 +4557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!1 &913635695
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,7 +5302,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 483562, guid: 0923b6304b472384eaed6ad7fd3fcc7f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7.07999992
       objectReference: {fileID: 0}
     - target: {fileID: 483562, guid: 0923b6304b472384eaed6ad7fd3fcc7f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5327,7 +5330,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483562, guid: 0923b6304b472384eaed6ad7fd3fcc7f, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9583566, guid: 0923b6304b472384eaed6ad7fd3fcc7f, type: 2}
       propertyPath: m_Enabled
@@ -5982,7 +5985,7 @@ Transform:
   m_PrefabInternal: {fileID: 1070908906}
   m_GameObject: {fileID: 1191223649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .400000006, z: 0}
+  m_LocalPosition: {x: -7.07999992, y: .400000006, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 1591920639}
@@ -6016,7 +6019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movspeed: .100000001
   edge_left: -18
-  edge_right: 18
+  edge_right: 1.70000005
 --- !u!1 &1222534565
 GameObject:
   m_ObjectHideFlags: 0
@@ -8514,7 +8517,7 @@ Transform:
   - {fileID: 207412833}
   - {fileID: 1170061859}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1 &1951631562
 GameObject:
   m_ObjectHideFlags: 0
