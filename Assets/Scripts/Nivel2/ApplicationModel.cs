@@ -25,9 +25,6 @@ public class ApplicationModel {
 	static Text txtDeltas;
 	static Text txtEpsilons;
 
-	//public static float speedInspector1;
-	//public static float speedInspector2;
-
 	public static void ActualizarContadores(){
 		txtPuntaje = GameObject.FindGameObjectWithTag("txtpuntaje").GetComponent<UnityEngine.UI.Text>();
 		txtAlfas = GameObject.Find ("txtAlfas").GetComponent<UnityEngine.UI.Text>();

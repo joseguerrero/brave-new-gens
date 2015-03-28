@@ -5,6 +5,8 @@ public class JuegoClasificacion : MonoBehaviour {
 	public float velocidadEmbrion;
 	public static Sprite[] letraSprites;
 	public static Sprite[] caminandoSprites;
+
+	GameObject inspector2, inspector3;
 	
 	void Awake()
 	{
@@ -12,6 +14,7 @@ public class JuegoClasificacion : MonoBehaviour {
 		letraSprites = Resources.LoadAll<Sprite>("letras");
 		caminandoSprites = Resources.LoadAll<Sprite> ("caminando2");
 	}
+
 	// Use this for initialization
 	void Start () {
 		ApplicationModel.puntaje = 0;
@@ -22,8 +25,23 @@ public class JuegoClasificacion : MonoBehaviour {
 		ApplicationModel.constReciclar = 1;
 		ApplicationModel.constDetenido = 5;
 
-		//ApplicationModel.speedInspector1 = 7;
-		//ApplicationModel.speedInspector1 = 5;
 		EnvaseClass.CreateEnvase ();
+
+		inspector2 = GameObject.Find("inspector2");
+		inspector2.SetActive(false);
+
+		inspector3 = GameObject.Find ("inspector3");
+		inspector3.SetActive (false);
+	}
+
+	void Update() {
+		if (!inspector2.activeSelf && (ApplicationModel.puntaje>20)) {
+			inspector2.SetActive(true);
+		}
+
+		if (!inspector3.activeSelf && (ApplicationModel.puntaje > 40)) {
+			inspector3.SetActive(true);
+		}
+
 	}
 }
