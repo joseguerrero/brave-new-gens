@@ -31,7 +31,7 @@ public class BodyCol : MonoBehaviour {
 	}
 
 	IEnumerator BodyHit() {
-		embAnimator.Play ("embrion2");
+		embAnimator.Play ("emb_idle");
 		hit = true;
 		yield return new WaitForSeconds (1);
 		hit = false;

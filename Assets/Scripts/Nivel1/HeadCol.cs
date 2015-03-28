@@ -22,7 +22,7 @@ public class HeadCol : MonoBehaviour {
 		if (col.name == "inyectadora" && !hit && !body.hit) {
 			hit = true;
 			wanderpath.wander = false;
-			embAnimator.Play ("death");
+			embAnimator.Play ("emb_fail");
 			if (Gamemaster.instance.score - 20.0f < 0){
 				Gamemaster.instance.score = 0;
 			}
