@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Zona_T : MonoBehaviour {
 
-	private bool check = false;
-	
 	void Start () {
 	
 	}

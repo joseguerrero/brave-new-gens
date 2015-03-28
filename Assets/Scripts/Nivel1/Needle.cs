@@ -2,16 +2,6 @@
 using System.Collections;
 
 public class Needle : MonoBehaviour {
-	/*
-	public float movspeed = 100;
-	public bool reposo = false;
-	public Text texto;
-	public bool cd = false;
-	public Correa correa;
-	public GameObject embryo;
-	public GameObject flask;
-	*/
-	
 	public float distance;
 	public Collider2D actualCol;
 	int layerMask = 1 << 8;
@@ -19,12 +9,21 @@ public class Needle : MonoBehaviour {
 	public GameObject marcador;
 	public int doseIndex = 2;
 	public int maxdoses = 1;
+	public GameObject[] marcadores;
 	
 	void Start () {
 		SetDose ();
 	}
 
 	void Update () {
+		if (Input.GetKey (KeyCode.LeftControl) && Input.GetKey (KeyCode.Q) ) {
+			Application.LoadLevel("principal");
+		}
+
+		if (Input.GetKey (KeyCode.LeftControl) && Input.GetKey (KeyCode.E) ) {
+			Application.Quit();
+		}
+
 		if (Input.GetKeyDown (KeyCode.Space) &&  Gamemaster.instance.playerControl){
 			switch (doseIndex){
 			case 0:
@@ -157,7 +156,9 @@ public class Needle : MonoBehaviour {
 	}
 
 	void SetDose(){
-		marcador.GetComponent<SpriteRenderer> ().color = dosis [doseIndex];
+		foreach (GameObject marcador in marcadores){
+			marcador.GetComponent<SpriteRenderer> ().color = dosis [doseIndex];
+		}
 	}
 
 	/*

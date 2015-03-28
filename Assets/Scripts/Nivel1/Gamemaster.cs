@@ -24,6 +24,8 @@ public class Gamemaster : MonoBehaviour
 	public GameObject dD;
 	public GameObject dE;
 	public Object hint;
+	public Object skip;
+	public Object kill;
 	public string hintColor;
 	public Canvas canvas;
 	
