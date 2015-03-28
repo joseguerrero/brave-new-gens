@@ -44,10 +44,6 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
-  - name: Default
-    userID: 0
-    uniqueID: 0
-    locked: 0
   - name: fondo
     userID: 1
     uniqueID: 3501436087
@@ -59,6 +55,10 @@ TagManager:
   - name: makina
     userID: 3
     uniqueID: 3548349325
+    locked: 0
+  - name: Default
+    userID: 0
+    uniqueID: 0
     locked: 0
   - name: Casta
     userID: 4
