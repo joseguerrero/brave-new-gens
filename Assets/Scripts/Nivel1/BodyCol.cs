@@ -25,13 +25,13 @@ public class BodyCol : MonoBehaviour {
 			if (flask.casta == col.GetComponent<Needle>().doseIndex){
 				Gamemaster.instance.score += (5.0f * n_iny);
 				n_iny += 1;
-				Gamemaster.instance.textScore.text = "Puntuacion: " + Gamemaster.instance.score;
+				Gamemaster.instance.textScore.text = Gamemaster.instance.score.ToString();
 			}
 		}
 	}
 
 	IEnumerator BodyHit() {
-		embAnimator.Play ("emb_idle");
+		embAnimator.Play ("emb_dosed");
 		hit = true;
 		yield return new WaitForSeconds (1);
 		hit = false;

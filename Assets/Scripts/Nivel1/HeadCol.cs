@@ -30,8 +30,8 @@ public class HeadCol : MonoBehaviour {
 				Gamemaster.instance.score -= 20.0f;
 			}
 			Gamemaster.instance.kills += 1;
-			Gamemaster.instance.textScore.text = "Puntuacion: " + Gamemaster.instance.score;
-			Gamemaster.instance.textKills.text = "Muertes: " + Gamemaster.instance.kills;
+			Gamemaster.instance.textScore.text = Gamemaster.instance.score.ToString();
+			Gamemaster.instance.textKills.text = "x " + Gamemaster.instance.kills;
 		}
 	}
 }

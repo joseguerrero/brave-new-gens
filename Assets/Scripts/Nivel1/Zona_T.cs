@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Zona_T : MonoBehaviour {
+
+	private bool check = false;
 	
 	void Start () {
 	
@@ -12,13 +14,13 @@ public class Zona_T : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D col){
-		Gamemaster.instance.SpawnSubject ();
-		//Gamemaster.instance.correa.GetComponent<Correa> ().actualSpeed -= 50;
+		if (col.transform.name == "Frasco") {
+			Gamemaster.instance.SpawnSubject ();
+		}
 	}
 	
 	void OnTriggerExit2D(Collider2D col){
-		//Gamemaster.instance.correa.GetComponent<Correa> ().actualSpeed = Gamemaster.instance.correa.GetComponent<Correa> ().speed;
-		//Gamemaster.instance.SpawnSubject ();
+		
 	}
 
 }
