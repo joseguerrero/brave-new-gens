@@ -54,7 +54,7 @@ public class Needle : MonoBehaviour {
 				}
 				break;
 			case 2:
-				if (Gamemaster.instance.dose_G >= 1){
+				if (Gamemaster.instance.dose_G >= 0){
 					Gamemaster.instance.dG.GetComponent<Animator>().enabled = true;
 					Gamemaster.instance.dG.GetComponent<Animator>().Play("dG_Spend");
 					Gamemaster.instance.dose_G -= 1;
@@ -132,19 +132,22 @@ public class Needle : MonoBehaviour {
 
 	void generateAnim(){
 		if (actualCol != null){
-			AnimationCurve curve = AnimationCurve.Linear(0, -5, 1, -5);
-			curve.AddKey(0.5f, actualCol.transform.position.y - 6.0f);
+			AnimationCurve curve = AnimationCurve.Linear(0, 10, 1, 10);
+			//curve.AddKey(0.5f, -20.0f);
+			curve.AddKey(0.5f, actualCol.transform.position.y -30.0f);
 			AnimationClip clip = new AnimationClip();
 			clip.SetCurve("", typeof(Transform), "localPosition.y", curve);
 			animation.AddClip(clip, "test");
 		}
+
 		else {
-			AnimationCurve curve = AnimationCurve.Linear(0, -5, 1, -5);
-			curve.AddKey(0.5f, -18.0f);
+			AnimationCurve curve = AnimationCurve.Linear(0, 10, 1, 10);
+			curve.AddKey(0.5f, -70.0f);
 			AnimationClip clip = new AnimationClip();
 			clip.SetCurve("", typeof(Transform), "localPosition.y", curve);
 			animation.AddClip(clip, "test");
 		}
+
 	}
 	
 	IEnumerator NeedleCD() {

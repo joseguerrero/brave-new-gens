@@ -15,7 +15,7 @@ public class Gamemaster : MonoBehaviour
 	public Text textKills;
 	public int dose_A = 1; // rojo
 	public int dose_B = 1; // naranja
-	public int dose_G = 1; // verde
+	public int dose_G = 100; // verde
 	public int dose_D = 1; // amarillo
 	public int dose_E = 1; // morado
 	public GameObject dA;
