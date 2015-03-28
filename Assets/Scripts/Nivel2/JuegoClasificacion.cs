@@ -3,6 +3,10 @@ using System.Collections;
 
 public class JuegoClasificacion : MonoBehaviour {
 	public float velocidadEmbrion;
+	public int nivelDerrota;
+	public int nivelAparicionInspector2;
+	public int nivelAparicionInspector3;
+	public int nivelVictoria;
 	public static Sprite[] letraSprites;
 	public static Sprite[] caminandoSprites;
 
@@ -35,13 +39,20 @@ public class JuegoClasificacion : MonoBehaviour {
 	}
 
 	void Update() {
-		if (!inspector2.activeSelf && (ApplicationModel.puntaje>20)) {
+		if (ApplicationModel.puntaje < nivelDerrota) {
+			Application.LoadLevel("derrota_n1");
+		}
+
+		if (!inspector2.activeSelf && (ApplicationModel.puntaje>nivelAparicionInspector2)) {
 			inspector2.SetActive(true);
 		}
 
-		if (!inspector3.activeSelf && (ApplicationModel.puntaje > 40)) {
+		if (!inspector3.activeSelf && (ApplicationModel.puntaje > nivelAparicionInspector3)) {
 			inspector3.SetActive(true);
 		}
 
+		if (ApplicationModel.puntaje >= nivelVictoria) {
+			Application.LoadLevel("victoria_n1");
+		}
 	}
 }
