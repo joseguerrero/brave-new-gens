@@ -22,7 +22,8 @@ public class AgregarAlfa : MonoBehaviour {
 		if (other.GetComponent<Atributos>().casta == (int)ApplicationModel.Casta.alfa) {
 			ApplicationModel.alfas += 1;
 			ApplicationModel.puntaje += ApplicationModel.constAgregar;
-			//AudioSource.PlayClipAtPoint(keyGrab, transform.position);
+			//AudioSource.PlayClipAtPoint(keyGrab, transform.position)
+
 			ApplicationModel.ActualizarContadores ();
 		}
 	}
