@@ -60,6 +60,10 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: makina2
+    userID: 5
+    uniqueID: 3521773555
+    locked: 0
   - name: Casta
     userID: 4
     uniqueID: 1271653533
