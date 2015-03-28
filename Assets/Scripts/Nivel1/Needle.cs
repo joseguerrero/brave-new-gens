@@ -2,16 +2,6 @@
 using System.Collections;
 
 public class Needle : MonoBehaviour {
-	/*
-	public float movspeed = 100;
-	public bool reposo = false;
-	public Text texto;
-	public bool cd = false;
-	public Correa correa;
-	public GameObject embryo;
-	public GameObject flask;
-	*/
-	
 	public float distance;
 	public Collider2D actualCol;
 	int layerMask = 1 << 8;
@@ -19,12 +9,21 @@ public class Needle : MonoBehaviour {
 	public GameObject marcador;
 	public int doseIndex = 2;
 	public int maxdoses = 1;
+	public GameObject[] marcadores;
 	
 	void Start () {
 		SetDose ();
 	}
 
 	void Update () {
+		if (Input.GetKey (KeyCode.LeftControl) && Input.GetKey (KeyCode.Q) ) {
+			Application.LoadLevel("principal");
+		}
+
+		if (Input.GetKey (KeyCode.LeftControl) && Input.GetKey (KeyCode.E) ) {
+			Application.Quit();
+		}
+
 		if (Input.GetKeyDown (KeyCode.Space) &&  Gamemaster.instance.playerControl){
 			switch (doseIndex){
 			case 0:
@@ -34,6 +33,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dose_A -= 1;
 					Inyectar();
 				}
+				else {
+					Gamemaster.instance.hintColor = "A";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
+				}
 				break;
 			case 1:
 				if (Gamemaster.instance.dose_B >= 1){
@@ -41,6 +45,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dB.GetComponent<Animator>().Play("dB_Spend");
 					Gamemaster.instance.dose_B -= 1;
 					Inyectar();
+				}
+				else {
+					Gamemaster.instance.hintColor = "B";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
 				}
 				break;
 			case 2:
@@ -50,6 +59,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dose_G -= 1;
 					Inyectar();
 				}
+				else {
+					Gamemaster.instance.hintColor = "G";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
+				}
 				break;
 			case 3:
 				if (Gamemaster.instance.dose_D >= 1){
@@ -58,6 +72,12 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dose_D -= 1;
 					Inyectar();
 				}
+				else {
+					Gamemaster.instance.hintColor = "D";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
+
+				}
 				break;
 			case 4:
 				if (Gamemaster.instance.dose_E >= 1){
@@ -65,6 +85,11 @@ public class Needle : MonoBehaviour {
 					Gamemaster.instance.dE.GetComponent<Animator>().Play("dE_Spend");
 					Gamemaster.instance.dose_E -= 1;
 					Inyectar();
+				}
+				else {
+					Gamemaster.instance.hintColor = "E";
+					GameObject h = (GameObject) Instantiate(Gamemaster.instance.hint);
+					h.transform.SetParent(Gamemaster.instance.canvas.transform, false);
 				}
 				break;
 			}
@@ -106,19 +131,22 @@ public class Needle : MonoBehaviour {
 
 	void generateAnim(){
 		if (actualCol != null){
-			AnimationCurve curve = AnimationCurve.Linear(0, -5, 1, -5);
-			curve.AddKey(0.5f, actualCol.transform.position.y - 6.0f);
+			AnimationCurve curve = AnimationCurve.Linear(0, 10, 1, 10);
+			//curve.AddKey(0.5f, -20.0f);
+			curve.AddKey(0.5f, actualCol.transform.position.y -50.0f);
 			AnimationClip clip = new AnimationClip();
 			clip.SetCurve("", typeof(Transform), "localPosition.y", curve);
 			animation.AddClip(clip, "test");
 		}
+
 		else {
-			AnimationCurve curve = AnimationCurve.Linear(0, -5, 1, -5);
-			curve.AddKey(0.5f, -18.0f);
+			AnimationCurve curve = AnimationCurve.Linear(0, 10, 1, 10);
+			curve.AddKey(0.5f, -70.0f);
 			AnimationClip clip = new AnimationClip();
 			clip.SetCurve("", typeof(Transform), "localPosition.y", curve);
 			animation.AddClip(clip, "test");
 		}
+
 	}
 	
 	IEnumerator NeedleCD() {
@@ -128,7 +156,9 @@ public class Needle : MonoBehaviour {
 	}
 
 	void SetDose(){
-		marcador.GetComponent<SpriteRenderer> ().color = dosis [doseIndex];
+		foreach (GameObject marcador in marcadores){
+			marcador.GetComponent<SpriteRenderer> ().color = dosis [doseIndex];
+		}
 	}
 
 	/*

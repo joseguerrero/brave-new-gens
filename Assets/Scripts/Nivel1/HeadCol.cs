@@ -7,6 +7,7 @@ public class HeadCol : MonoBehaviour {
 	public BodyCol body;
 	public Animator embAnimator;
 	public WanderSteering wanderpath;
+	public bool dead = false;
 
 	void Start () {
 		body = transform.parent.GetComponent<BodyCol> ();
@@ -22,16 +23,18 @@ public class HeadCol : MonoBehaviour {
 		if (col.name == "inyectadora" && !hit && !body.hit) {
 			hit = true;
 			wanderpath.wander = false;
-			embAnimator.Play ("death");
+			embAnimator.Play ("emb_fail");
 			if (Gamemaster.instance.score - 20.0f < 0){
 				Gamemaster.instance.score = 0;
 			}
 			else{
 				Gamemaster.instance.score -= 20.0f;
 			}
+			GameObject k = (GameObject) Instantiate(Gamemaster.instance.kill);
+			k.transform.SetParent(Gamemaster.instance.canvas.transform, false);
 			Gamemaster.instance.kills += 1;
-			Gamemaster.instance.textScore.text = "Puntuacion: " + Gamemaster.instance.score;
-			Gamemaster.instance.textKills.text = "Muertes: " + Gamemaster.instance.kills;
+			Gamemaster.instance.textScore.text = Gamemaster.instance.score.ToString();
+			Gamemaster.instance.textKills.text = "x " + Gamemaster.instance.kills;
 		}
 	}
 }

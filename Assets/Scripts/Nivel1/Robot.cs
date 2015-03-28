@@ -15,12 +15,14 @@ public class Robot : MonoBehaviour {
 	void Update () {
 		if (Gamemaster.instance.playerControl){
 			if(Input.GetAxis("Horizontal") < 0 ){
-				if (transform.position.x > edge_left)
+				if (transform.position.x > edge_left){
 					transform.position = new Vector2(transform.position.x - movspeed, transform.position.y);
+				}
 			}
 			else if (Input.GetAxis("Horizontal") > 0 ) {
-				if (transform.position.x < edge_right)
+				if (transform.position.x < edge_right){
 					transform.position = new Vector2(transform.position.x + movspeed, transform.position.y);
+				}
 			}
 		}
 	}

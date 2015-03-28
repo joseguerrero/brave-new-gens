@@ -23,6 +23,11 @@ public class Gamemaster : MonoBehaviour
 	public GameObject dG;
 	public GameObject dD;
 	public GameObject dE;
+	public Object hint;
+	public Object skip;
+	public Object kill;
+	public string hintColor;
+	public Canvas canvas;
 	
 	public static Gamemaster instance {
 		get {
@@ -46,8 +51,8 @@ public class Gamemaster : MonoBehaviour
 	}
 
 	void Start () {
-		Gamemaster.instance.textScore.text = "Puntuacion: 0";
-		Gamemaster.instance.textKills.text = "Muertes: 0";
+		Gamemaster.instance.textScore.text = "0";
+		Gamemaster.instance.textKills.text = "x 0";
 		SpawnSubject ();
 	}
 
